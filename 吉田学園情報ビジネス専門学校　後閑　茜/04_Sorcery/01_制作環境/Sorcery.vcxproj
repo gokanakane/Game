@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Abyssgate.cpp" />
+    <ClCompile Include="Areista.cpp" />
+    <ClCompile Include="Bg.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="BulletEffect.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="CharactorSelect.cpp" />
+    <ClCompile Include="CutinBase.cpp" />
+    <ClCompile Include="CutinKIWAME.cpp" />
+    <ClCompile Include="CutinNormal.cpp" />
+    <ClCompile Include="Doragon.cpp" />
+    <ClCompile Include="EffectBase.cpp" />
+    <ClCompile Include="EnemyBase.cpp" />
+    <ClCompile Include="EnemyBoss.cpp" />
+    <ClCompile Include="EnemyNormal.cpp" />
+    <ClCompile Include="EnemyRelative.cpp" />
+    <ClCompile Include="EnemyTutorial.cpp" />
+    <ClCompile Include="Explosion.cpp" />
+    <ClCompile Include="Fade.cpp" />
+    <ClCompile Include="FallStarEffect.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Gamescore.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="Karnerian.cpp" />
+    <ClCompile Include="LifeGauge.cpp" />
+    <ClCompile Include="Liliy.cpp" />
+    <ClCompile Include="MagicEffect.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Manager.cpp" />
+    <ClCompile Include="Number.cpp" />
+    <ClCompile Include="OptionBase.cpp" />
+    <ClCompile Include="Pause.cpp" />
+    <ClCompile Include="PlayerBase.cpp" />
+    <ClCompile Include="Putbullet.cpp" />
+    <ClCompile Include="Ranking.cpp" />
+    <ClCompile Include="RankingScore.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="Renge.cpp" />
+    <ClCompile Include="Result.cpp" />
+    <ClCompile Include="ResultScore.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Scene2D.cpp" />
+    <ClCompile Include="ScoreBase.cpp" />
+    <ClCompile Include="Shield.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="Stage1.cpp" />
+    <ClCompile Include="Stage2.cpp" />
+    <ClCompile Include="Stage3.cpp" />
+    <ClCompile Include="Stage4.cpp" />
+    <ClCompile Include="StageBase.cpp" />
+    <ClCompile Include="StageSelect.cpp" />
+    <ClCompile Include="Time.cpp" />
+    <ClCompile Include="Title.cpp" />
+    <ClCompile Include="Tutorial.cpp" />
+    <ClCompile Include="TutorialUI.cpp" />
+    <ClCompile Include="UiBase.cpp" />
+    <ClCompile Include="Vivian.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Abyssgate.h" />
+    <ClInclude Include="Areista.h" />
+    <ClInclude Include="Bg.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="BulletEffect.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="CharactorSelect.h" />
+    <ClInclude Include="CutinBase.h" />
+    <ClInclude Include="CutinKIWAME.h" />
+    <ClInclude Include="CutinNormal.h" />
+    <ClInclude Include="Doragon.h" />
+    <ClInclude Include="EffectBase.h" />
+    <ClInclude Include="EnemyBase.h" />
+    <ClInclude Include="EnemyBoss.h" />
+    <ClInclude Include="EnemyNormal.h" />
+    <ClInclude Include="EnemyRelative.h" />
+    <ClInclude Include="EnemyTutorial.h" />
+    <ClInclude Include="Explosion.h" />
+    <ClInclude Include="Fade.h" />
+    <ClInclude Include="FallStarEffect.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameScore.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="Karnerian.h" />
+    <ClInclude Include="LifeGauge.h" />
+    <ClInclude Include="Liliy.h" />
+    <ClInclude Include="MagicEffect.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="Manager.h" />
+    <ClInclude Include="Number.h" />
+    <ClInclude Include="OptionBase.h" />
+    <ClInclude Include="Pause.h" />
+    <ClInclude Include="PlayerBase.h" />
+    <ClInclude Include="Putbullet.h" />
+    <ClInclude Include="Ranking.h" />
+    <ClInclude Include="RankingScore.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="Renge.h" />
+    <ClInclude Include="Result.h" />
+    <ClInclude Include="ResultScore.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Scene2D.h" />
+    <ClInclude Include="ScoreBase.h" />
+    <ClInclude Include="Shield.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="Stage1.h" />
+    <ClInclude Include="Stage2.h" />
+    <ClInclude Include="Stage3.h" />
+    <ClInclude Include="Stage4.h" />
+    <ClInclude Include="StageBase.h" />
+    <ClInclude Include="StageSelect.h" />
+    <ClInclude Include="Time.h" />
+    <ClInclude Include="Title.h" />
+    <ClInclude Include="Tutorial.h" />
+    <ClInclude Include="TutorialUI.h" />
+    <ClInclude Include="UiBase.h" />
+    <ClInclude Include="Vivian.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C56D1101-EB68-4886-AFFC-EE35C6CE9372}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Sorcery</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$()\</OutDir>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

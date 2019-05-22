@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Charactor">
+      <UniqueIdentifier>{115078e8-672a-4219-84c1-75754b10d06f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Charactor\Player">
+      <UniqueIdentifier>{39a268b6-1701-48cd-bb5c-9251284874ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\System">
+      <UniqueIdentifier>{d9a08b25-649a-4ea0-8da7-8ed2927642d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Object">
+      <UniqueIdentifier>{f286e03f-6d11-4059-b19a-c5b67c1e69fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Mode">
+      <UniqueIdentifier>{3614bd8f-0fc6-45a0-a185-a23f4cdf5fc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\UI">
+      <UniqueIdentifier>{a0867358-863d-4cf3-8bd2-d8919eed7a5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\UI\Cutin">
+      <UniqueIdentifier>{fc1727c6-606a-4a6f-a9a9-d1c1aa5164ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Charactor\Enemy">
+      <UniqueIdentifier>{6d9772c0-6f63-4830-8813-ed5f8ca9f9ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\UI\Option">
+      <UniqueIdentifier>{debf11f0-18b7-4a47-b25c-6b5b280682ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Scene">
+      <UniqueIdentifier>{6a52ca08-5e4a-4748-9316-7b22b33cad87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Stage">
+      <UniqueIdentifier>{6abf36bd-c33e-46ca-ac91-aab372dbc00b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\UI\Score">
+      <UniqueIdentifier>{f35dfb1d-71fc-456d-a2b4-843f8ada65d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Charactor">
+      <UniqueIdentifier>{12bf2918-fc79-4704-9c0d-bc20a7a3cf54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Charactor\Player">
+      <UniqueIdentifier>{5f1ea756-0ff1-4c0f-b5f8-7c8a61234a0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Charactor\Enemy">
+      <UniqueIdentifier>{fabdc198-199d-4983-a837-6310c288dacc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Mode">
+      <UniqueIdentifier>{7536be85-e0fb-4170-9b54-02ce1d1412f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\UI">
+      <UniqueIdentifier>{0a9a93bc-a3df-4c25-bba9-42b366699c84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\UI\Cutin">
+      <UniqueIdentifier>{06d275a6-93af-4c14-8767-28a6da996630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\UI\Score">
+      <UniqueIdentifier>{3ab26769-70b8-4d73-a321-a27100497c2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\System">
+      <UniqueIdentifier>{de587f72-209e-4e76-ac62-ba9a2919d8a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Effect">
+      <UniqueIdentifier>{7a0e822b-0e3a-4bae-92d1-39bc6007c792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object">
+      <UniqueIdentifier>{ef48db46-897c-458b-b4b1-c7f23e20c64f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\UI\Option">
+      <UniqueIdentifier>{54973ea9-df2b-4c23-ab5f-77e66b5660a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene">
+      <UniqueIdentifier>{8a5d1d66-5e38-437e-a0ed-56f02862b1b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Stage">
+      <UniqueIdentifier>{477f956c-34e4-46f6-8e2e-d4f48c131de9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Effect">
+      <UniqueIdentifier>{fe324127-01e6-492b-8eaa-9fff2c8ec9d6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Areista.cpp">
+      <Filter>ソース ファイル\Charactor\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyBase.cpp">
+      <Filter>ソース ファイル\Charactor\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyBoss.cpp">
+      <Filter>ソース ファイル\Charactor\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyNormal.cpp">
+      <Filter>ソース ファイル\Charactor\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyRelative.cpp">
+      <Filter>ソース ファイル\Charactor\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyTutorial.cpp">
+      <Filter>ソース ファイル\Charactor\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Doragon.cpp">
+      <Filter>ソース ファイル\Charactor\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="CutinBase.cpp">
+      <Filter>ソース ファイル\UI\Cutin</Filter>
+    </ClCompile>
+    <ClCompile Include="CutinKIWAME.cpp">
+      <Filter>ソース ファイル\UI\Cutin</Filter>
+    </ClCompile>
+    <ClCompile Include="CutinNormal.cpp">
+      <Filter>ソース ファイル\UI\Cutin</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectBase.cpp">
+      <Filter>ソース ファイル\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Explosion.cpp">
+      <Filter>ソース ファイル\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Fade.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="FallStarEffect.cpp">
+      <Filter>ソース ファイル\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Bg.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>ソース ファイル\Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="CharactorSelect.cpp">
+      <Filter>ソース ファイル\Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>ソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletEffect.cpp">
+      <Filter>ソース ファイル\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Gamescore.cpp">
+      <Filter>ソース ファイル\UI\Score</Filter>
+    </ClCompile>
+    <ClCompile Include="LifeGauge.cpp">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Abyssgate.cpp">
+      <Filter>ソース ファイル\UI\Option</Filter>
+    </ClCompile>
+    <ClCompile Include="Karnerian.cpp">
+      <Filter>ソース ファイル\Charactor\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Liliy.cpp">
+      <Filter>ソース ファイル\Charactor\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="MagicEffect.cpp">
+      <Filter>ソース ファイル\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Number.cpp">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionBase.cpp">
+      <Filter>ソース ファイル\UI\Option</Filter>
+    </ClCompile>
+    <ClCompile Include="Pause.cpp">
+      <Filter>ソース ファイル\Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="Putbullet.cpp">
+      <Filter>ソース ファイル\UI\Option</Filter>
+    </ClCompile>
+    <ClCompile Include="Ranking.cpp">
+      <Filter>ソース ファイル\Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="RankingScore.cpp">
+      <Filter>ソース ファイル\UI\Score</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultScore.cpp">
+      <Filter>ソース ファイル\UI\Score</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene2D.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreBase.cpp">
+      <Filter>ソース ファイル\UI\Score</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage1.cpp">
+      <Filter>ソース ファイル\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage2.cpp">
+      <Filter>ソース ファイル\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage3.cpp">
+      <Filter>ソース ファイル\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage4.cpp">
+      <Filter>ソース ファイル\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="StageBase.cpp">
+      <Filter>ソース ファイル\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Shield.cpp">
+      <Filter>ソース ファイル\UI\Option</Filter>
+    </ClCompile>
+    <ClCompile Include="TutorialUI.cpp">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cpp">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UiBase.cpp">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerBase.cpp">
+      <Filter>ソース ファイル\Charactor\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Renge.cpp">
+      <Filter>ソース ファイル\Charactor\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Vivian.cpp">
+      <Filter>ソース ファイル\Charactor\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Result.cpp">
+      <Filter>ソース ファイル\Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="StageSelect.cpp">
+      <Filter>ソース ファイル\Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="Title.cpp">
+      <Filter>ソース ファイル\Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial.cpp">
+      <Filter>ソース ファイル\Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Areista.h">
+      <Filter>ヘッダー ファイル\Charactor\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Doragon.h">
+      <Filter>ヘッダー ファイル\Charactor\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Karnerian.h">
+      <Filter>ヘッダー ファイル\Charactor\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Bg.h">
+      <Filter>ヘッダー ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>ヘッダー ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletEffect.h">
+      <Filter>ヘッダー ファイル\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="CharactorSelect.h">
+      <Filter>ヘッダー ファイル\Mode</Filter>
+    </ClInclude>
+    <ClInclude Include="CutinBase.h">
+      <Filter>ヘッダー ファイル\UI\Cutin</Filter>
+    </ClInclude>
+    <ClInclude Include="CutinKIWAME.h">
+      <Filter>ヘッダー ファイル\UI\Cutin</Filter>
+    </ClInclude>
+    <ClInclude Include="CutinNormal.h">
+      <Filter>ヘッダー ファイル\UI\Cutin</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectBase.h">
+      <Filter>ヘッダー ファイル\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyBase.h">
+      <Filter>ヘッダー ファイル\Charactor\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyBoss.h">
+      <Filter>ヘッダー ファイル\Charactor\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyNormal.h">
+      <Filter>ヘッダー ファイル\Charactor\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyRelative.h">
+      <Filter>ヘッダー ファイル\Charactor\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyTutorial.h">
+      <Filter>ヘッダー ファイル\Charactor\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>ヘッダー ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Fade.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>ヘッダー ファイル\Mode</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Explosion.h">
+      <Filter>ヘッダー ファイル\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="FallStarEffect.h">
+      <Filter>ヘッダー ファイル\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="LifeGauge.h">
+      <Filter>ヘッダー ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="MagicEffect.h">
+      <Filter>ヘッダー ファイル\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Number.h">
+      <Filter>ヘッダー ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Liliy.h">
+      <Filter>ヘッダー ファイル\Charactor\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Abyssgate.h">
+      <Filter>ヘッダー ファイル\UI\Option</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerBase.h">
+      <Filter>ヘッダー ファイル\Charactor\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene2D.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage1.h">
+      <Filter>ヘッダー ファイル\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage2.h">
+      <Filter>ヘッダー ファイル\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage3.h">
+      <Filter>ヘッダー ファイル\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage4.h">
+      <Filter>ヘッダー ファイル\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="StageBase.h">
+      <Filter>ヘッダー ファイル\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>ヘッダー ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Title.h">
+      <Filter>ヘッダー ファイル\Mode</Filter>
+    </ClInclude>
+    <ClInclude Include="Putbullet.h">
+      <Filter>ヘッダー ファイル\UI\Option</Filter>
+    </ClInclude>
+    <ClInclude Include="Pause.h">
+      <Filter>ヘッダー ファイル\Mode</Filter>
+    </ClInclude>
+    <ClInclude Include="Ranking.h">
+      <Filter>ヘッダー ファイル\Mode</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionBase.h">
+      <Filter>ヘッダー ファイル\UI\Option</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScore.h">
+      <Filter>ヘッダー ファイル\UI\Score</Filter>
+    </ClInclude>
+    <ClInclude Include="RankingScore.h">
+      <Filter>ヘッダー ファイル\UI\Score</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Renge.h">
+      <Filter>ヘッダー ファイル\Charactor\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Result.h">
+      <Filter>ヘッダー ファイル\Mode</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultScore.h">
+      <Filter>ヘッダー ファイル\UI\Score</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreBase.h">
+      <Filter>ヘッダー ファイル\UI\Score</Filter>
+    </ClInclude>
+    <ClInclude Include="UiBase.h">
+      <Filter>ヘッダー ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Vivian.h">
+      <Filter>ヘッダー ファイル\Charactor\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Shield.h">
+      <Filter>ヘッダー ファイル\UI\Option</Filter>
+    </ClInclude>
+    <ClInclude Include="StageSelect.h">
+      <Filter>ヘッダー ファイル\Mode</Filter>
+    </ClInclude>
+    <ClInclude Include="Tutorial.h">
+      <Filter>ヘッダー ファイル\Mode</Filter>
+    </ClInclude>
+    <ClInclude Include="TutorialUI.h">
+      <Filter>ヘッダー ファイル\UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

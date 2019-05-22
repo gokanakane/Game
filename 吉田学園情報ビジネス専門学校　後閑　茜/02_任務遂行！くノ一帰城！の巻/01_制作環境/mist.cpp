@@ -1,0 +1,146 @@
+//=============================================================================
+//
+// 背景処理 [MIST.cpp]
+// Author : Gokan akane
+//
+//=============================================================================
+#include "main.h"
+#include "Player.h"
+#include "mist.h"
+
+//*****************************************************************************
+// マクロ定義
+//*****************************************************************************
+#define MIST_TEXTUER  "data\\TEXTURE\\mist.png" //読み込むテクスチャ
+#define MIST_POS_X (0)					   //背景左上X
+#define MIST_POS_Y (500)					   //背景左上Y
+#define MAX_TEX  (2)					   //テクスチャの枚数
+#define MIST_MOVE (3.0f)
+//*****************************************************************************
+// グローバル変数
+//*****************************************************************************
+LPDIRECT3DTEXTURE9 g_pTextureMist = NULL;//テクスチャへのポインタ
+LPDIRECT3DVERTEXBUFFER9 g_pVtxBuffMist = NULL;
+int g_nCntMist = 0;
+
+//=============================================================================
+// ポリゴン初期化処理[InitPolygon]
+//=============================================================================
+void InitMist(void)
+{
+	LPDIRECT3DDEVICE9 pDevice;
+	VERTEX_2D*pVtx;//頂点情報へのポインタ
+
+	//デバイスの取得
+	pDevice = GetDevice();
+
+	//テクスチャ読み込み
+	D3DXCreateTextureFromFile(pDevice, MIST_TEXTUER, &g_pTextureMist);
+
+
+	//頂点バッファの生成
+	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4, 
+								D3DUSAGE_WRITEONLY,
+								FVF_VERTEX_2D, 
+								D3DPOOL_MANAGED,
+								&g_pVtxBuffMist, NULL);
+
+	//頂点をロックして頂点データへのポインタを取得
+	g_pVtxBuffMist->Lock(0, 0, (void**)&pVtx,0);
+
+		//背景の座標設定
+		pVtx[0].pos = D3DXVECTOR3(MIST_POS_X, MIST_POS_Y, 0.0f);//一つ目の頂点の場所指定
+		pVtx[1].pos = D3DXVECTOR3(SCREEN_WIDTH, MIST_POS_Y, 0.0f);//二つ目の頂点の場所指定（右回り）
+		pVtx[2].pos = D3DXVECTOR3(MIST_POS_X, SCREEN_HEIGHT, 0.0f);//三つ目の頂点の場所指定（右回り）
+		pVtx[3].pos = D3DXVECTOR3(SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f);//三つ目の頂点の場所指定（右回り）
+
+		//rhwの設定
+		pVtx[0].rhw = 1.0f;
+		pVtx[1].rhw = 1.0f;
+		pVtx[2].rhw = 1.0f;
+		pVtx[3].rhw = 1.0f;
+
+		//背景色設定
+		pVtx[0].col = D3DXCOLOR(1.0f, 1.0f, 1.0f, 0.3f);//一つ目の頂点の色指定（右回り）
+		pVtx[1].col = D3DXCOLOR(1.0f, 1.0f, 1.0f, 0.3f);//一つ目の頂点の色指定（右回り）
+		pVtx[2].col = D3DXCOLOR(1.0f, 1.0f, 1.0f, 0.3f);//一つ目の頂点の色指定（右回り）
+		pVtx[3].col = D3DXCOLOR(1.0f, 1.0f, 1.0f, 0.3f);//一つ目の頂点の色指定（右回り）
+
+		//背景テクスチャの設定
+		pVtx[0].tex = D3DXVECTOR2(0.0f, 0.0f);
+		pVtx[1].tex = D3DXVECTOR2(1.0f, 0.0f);
+		pVtx[2].tex = D3DXVECTOR2(0.0f, 1.0f);
+		pVtx[3].tex = D3DXVECTOR2(1.0f, 1.0f);
+
+
+	//頂点バッファのアンロック
+	g_pVtxBuffMist->Unlock();
+
+}
+//=============================================================================
+//ポリゴン終了処理 [UninitPolygon]
+//=============================================================================
+void UninitMist(void)
+{
+	//テクスチャの破棄
+	if (g_pTextureMist != NULL)
+	{
+		g_pTextureMist->Release();
+		g_pTextureMist = NULL;
+	}
+
+
+
+	//頂点バッファの破棄
+	if (g_pVtxBuffMist != NULL)
+	{
+		g_pVtxBuffMist->Release();
+		g_pVtxBuffMist = NULL;
+	}
+
+}
+
+//=============================================================================
+// ポリゴン更新処理[UpdataPolygon]
+//=============================================================================
+void UpdateMist(void)
+{
+	VERTEX_2D*pVtx;//頂点情報へのポインタ
+	g_nCntMist++;
+
+	//頂点をロックして頂点データへのポインタを取得
+	g_pVtxBuffMist->Lock(0, 0, (void**)&pVtx, 0);
+
+	//背景の座標設定
+	pVtx[0].tex = D3DXVECTOR2(0.0f + (-g_nCntMist*(0.001f + 1)), 0.0f);//一つ目の頂点の場所指定
+	pVtx[1].tex = D3DXVECTOR2(1.0f + (-g_nCntMist*(0.001f + 1)), 0.0f);//二つ目の頂点の場所指定（右回り）
+	pVtx[2].tex = D3DXVECTOR2(0.0f + (-g_nCntMist*(0.001f + 1)), 1.0f);//三つ目の頂点の場所指定（右回り）
+	pVtx[3].tex = D3DXVECTOR2(1.0f + (-g_nCntMist*(0.001f + 1)), 1.0f);//三つ目の頂点の場所指定（右回り）
+
+	//頂点バッファのアンロック
+	g_pVtxBuffMist->Unlock();
+
+}
+//=============================================================================
+// ポリゴン描写処理[DrawPolygon]
+//=============================================================================
+void DrawMist(void)
+{
+	LPDIRECT3DDEVICE9 pDevice;
+
+	//デバイスを取得する
+	pDevice = GetDevice();
+
+	//頂点バッファをデバイスのデータストリームに設定
+	pDevice->SetStreamSource(0, g_pVtxBuffMist, 0, sizeof(VERTEX_2D));
+
+	//頂点フォーマットの設定
+	pDevice->SetFVF(FVF_VERTEX_2D);
+		//テクスチャの設定
+		pDevice->SetTexture(0, g_pTextureMist);
+
+		//ポリゴンの描画
+		pDevice->DrawPrimitive(D3DPT_TRIANGLESTRIP,
+			0,
+			2);
+}

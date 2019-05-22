@@ -1,0 +1,59 @@
+﻿  3dobject.cpp
+  bg.cpp
+  block.cpp
+  camera.cpp
+  effect.cpp
+effect.cpp(147): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+  enemy.cpp
+enemy.cpp(220): warning C4800: 'int': ブール値を 'true' または 'false' に強制的に設定します (警告の処理)
+  fade.cpp
+  font.cpp
+  game.cpp
+  input.cpp
+  item.cpp
+  itemicon.cpp
+  life.cpp
+  light.cpp
+  main.cpp
+  manager.cpp
+  meshfield.cpp
+  meshriver.cpp
+  minimap.cpp
+  model.cpp
+  コンパイル中...
+  motion.cpp
+  number.cpp
+  pause.cpp
+  pausebg.cpp
+  player.cpp
+player.cpp(240): warning C4800: 'int': ブール値を 'true' または 'false' に強制的に設定します (警告の処理)
+  press.cpp
+  ranking.cpp
+  rankinglogo.cpp
+  renderer.cpp
+  result.cpp
+  scene.cpp
+  scene2d.cpp
+  scene3d.cpp
+  scenemesh.cpp
+  scenex.cpp
+  score.cpp
+  shadow.cpp
+  sound.cpp
+  start.cpp
+  time.cpp
+  コンパイル中...
+  title.cpp
+  titleframe.cpp
+  titlelogo.cpp
+  tutorial.cpp
+  ui.cpp
+  wall.cpp
+  コード生成しています。
+c:\users\game112\documents\visual studio 2015\projects\就活用\異世界転生したら巨人に追われてた件\scene.cpp(313): warning C4172: ローカル変数またはテンポラリのアドレスを返します: cName
+c:\users\game112\documents\visual studio 2015\projects\就活用\異世界転生したら巨人に追われてた件\player.h(167): warning C4172: ローカル変数またはテンポラリのアドレスを返します: cStr
+c:\users\game112\documents\visual studio 2015\projects\就活用\異世界転生したら巨人に追われてた件\enemy.h(160): warning C4172: ローカル変数またはテンポラリのアドレスを返します: cStr
+  All 654 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  コード生成が終了しました。
+  異世界転生したら巨人に追われてた件.vcxproj -> C:\Users\game112\Documents\Visual Studio 2015\Projects\就活用\異世界転生したら巨人に追われてた件\Release\異世界転生したら巨人に追われてた件.exe
+  異世界転生したら巨人に追われてた件.vcxproj -> C:\Users\game112\Documents\Visual Studio 2015\Projects\就活用\異世界転生したら巨人に追われてた件\Release\異世界転生したら巨人に追われてた件.pdb (Full PDB)

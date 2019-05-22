@@ -1,0 +1,46 @@
+//=============================================================================
+//
+// 背景処理 [TutorialBG.h]
+// Author :Gokan akane
+//
+//=============================================================================
+#ifndef _TUTORIALBG_H_ //二十インクルード防止のマクロ定義
+#define _TUTORIALBG_
+
+#include "main.h"
+
+//*****************************************************************************
+// 構造体定義
+//*****************************************************************************
+typedef enum
+{
+	TUTORIALSTATE_NONE = 0,
+	TUTORIALSTATE_FADEIN,
+	TUTORIALSTATE_FADEOUT,
+	TUTORIALTATE_MAX
+
+}TutorialState;
+typedef struct
+{
+	D3DXCOLOR col;
+	float nChangeArpha;//透明度変更
+
+}TutorialCol;
+
+
+//*****************************************************************************
+// マクロ定義
+//*****************************************************************************
+#define BG_TEXTUER  "data\\TEXTURE\\Tutorial003.png" //読み込むテクスチャ
+#define BG_TEXTUER1 "data\\TEXTURE\\Tutorial001.png" //読み込むテクスチャ
+#define BG_TEXTUER2 "data\\TEXTURE\\Tutorial002.png" //読み込むテクスチャ
+#define BG_TEXTUER3 "data\\TEXTURE\\Tutorial004.png" //読み込むテクスチャ
+
+//*****************************************************************************
+// プロトタイプ宣言
+//*****************************************************************************
+void InitTutorialBG(void);
+void UninitTutorialBG(void);
+void UpdateTutorialBG(void);
+void DrawTutorialBG(void);
+#endif
