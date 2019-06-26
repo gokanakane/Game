@@ -63,6 +63,7 @@ HRESULT CCharactorSelect::Init(void)
 			m_apScene2D[nCnt]->BindTexture(m_pTexture[nCnt]);
 			m_apScene2D[nCnt]->SetScene2D(D3DXVECTOR3(SCREEN_WIDTH / 2, 310.0f, 0.0f), 400.0f, 200.0f);
 			m_apScene2D[nCnt]->SetAnimY(1, 6,0);
+			m_apScene2D[nCnt]->SetObjtype(CScene::OBJTYPE_CHARACTORSELECT);
 		}
 		else if (nCnt == 1)
 		{//ネームプレート
@@ -71,6 +72,7 @@ HRESULT CCharactorSelect::Init(void)
 			m_apScene2D[nCnt]->BindTexture(m_pTexture[nCnt]);
 			m_apScene2D[nCnt]->SetScene2D(D3DXVECTOR3(350.0f, 110.0f, 0.0f), 130.0f, 80.0f);
 			m_apScene2D[nCnt]->SetAnimY(1,6, 0);
+			m_apScene2D[nCnt]->SetObjtype(CScene::OBJTYPE_CHARACTORSELECT);
 		}
 		else if(nCnt == 2)
 		{//サブタイトル
@@ -78,6 +80,7 @@ HRESULT CCharactorSelect::Init(void)
 			m_apScene2D[nCnt]->Init();
 			m_apScene2D[nCnt]->BindTexture(m_pTexture[nCnt]);
 			m_apScene2D[nCnt]->SetScene2D(D3DXVECTOR3(300.0f, 40.0f, 0.0f), 300.0f, 40.0f);
+			m_apScene2D[nCnt]->SetObjtype(CScene::OBJTYPE_CHARACTORSELECT);
 		}
 		else if (nCnt >= 3 && nCnt <= 8)
 		{
@@ -86,6 +89,7 @@ HRESULT CCharactorSelect::Init(void)
 			m_apScene2D[nCnt]->BindTexture(m_pTexture[nCnt]);
 			m_apScene2D[nCnt]->SetScene2D(D3DXVECTOR3(300.0f + (130.0f*(nCnt - 3)), 580.0f, 0.0f), 100.0f, 100.0f);
 			m_apScene2D[nCnt]->SetCharaAnim(1, 0.0f);
+			m_apScene2D[nCnt]->SetObjtype(CScene::OBJTYPE_CHARACTORSELECT);
 		}
 		else
 		{
@@ -93,6 +97,7 @@ HRESULT CCharactorSelect::Init(void)
 			m_apScene2D[nCnt]->Init();
 			m_apScene2D[nCnt]->BindTexture(m_pTexture[9]);
 			m_apScene2D[nCnt]->SetScene2D(D3DXVECTOR3(300.0f + (130.0f*(nCnt - 6)), 580.0f, 0.0f), 50.0f, 80.0f);
+			m_apScene2D[nCnt]->SetObjtype(CScene::OBJTYPE_CHARACTORSELECT);
 		}
 	}
 	return S_OK;

@@ -158,7 +158,6 @@ void CGame::Uninit(void)
 	CButton::UnLoad();
 	CCutIn::UnLoad();
 	COption::UnLoad();
-	
 	//BGMの停止
 	if (CManager::GetStageSelect() == CManager::STAGESELECT_STAGE1)
 	{
@@ -176,6 +175,7 @@ void CGame::Uninit(void)
 	{
 		CSound::StopSound(CSound::SOUND_LABEL_STAGE4);
 	}
+
 	/* 各種ポインタの初期化 */
 	if (m_pPause != NULL)
 	{//ポーズ

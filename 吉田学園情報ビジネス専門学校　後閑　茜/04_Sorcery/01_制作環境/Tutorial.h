@@ -18,7 +18,7 @@
 #define TEXTURE_NARRATORSUBTITLE	"data\\TEXTURE\\Tutorial\\Tutorial_Narrator.png"
 #define TEXTURE_SKIP				"data\\TEXTURE\\Tutorial\\Tutorial_Skip.png"
 #define TEXTURE_LECTURE				"data\\TEXTURE\\Tutorial\\Tutorial_lecture.png"
-#define TEXTURE_CHARACTORSKILL		"data\\TEXTURE\\Tutorial\\CharactorSelext_Status001.png"
+#define TEXTURE_CHARACTORSKILL		"data\\TEXTURE\\CharactorSelect\\CharactorSelext_Status001.png"
 
 //*****************************************************************************
 // ëOï˚êÈåæ

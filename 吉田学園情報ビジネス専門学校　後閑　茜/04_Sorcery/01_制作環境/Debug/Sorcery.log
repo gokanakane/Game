@@ -1,13 +1,7 @@
-﻿  Game.cpp
+﻿  Ranking.cpp
+  Manager.cpp
+  Game.cpp
+  CharactorSelect.cpp
   コードを生成中...
-  スキップ中... (関連する変更は検出されませんでした)
-  Time.cpp
-  ScoreBase.cpp
-  ResultScore.cpp
-  Result.cpp
-  RankingScore.cpp
-  Ranking.cpp
-  Number.cpp
-  Gamescore.cpp
-  Sorcery.vcxproj -> C:\Users\game112\Documents\Visual Studio 2015\Projects\就活用\Sorcery\\Sorcery.exe
-  Sorcery.vcxproj -> C:\Users\game112\Documents\Visual Studio 2015\Projects\就活用\Sorcery\\Sorcery.pdb (Full PDB)
+  Sorcery.vcxproj -> C:\Users\game112\Desktop\吉田学園情報ビジネス専門学校　後閑　茜\04_Sorcery\01_制作環境\\Sorcery.exe
+  Sorcery.vcxproj -> C:\Users\game112\Desktop\吉田学園情報ビジネス専門学校　後閑　茜\04_Sorcery\01_制作環境\\Sorcery.pdb (Full PDB)

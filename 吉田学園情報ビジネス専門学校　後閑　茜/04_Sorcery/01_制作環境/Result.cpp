@@ -101,7 +101,7 @@ void CResult::Init(void)
 				break;
 			}
 			m_GoalLogopos = D3DXVECTOR3(300.0f, 100.0f, 0.0f);
-			m_apScene2D[nCnt]->SetObjtype(CScene::OBJTYPE_TUTORIAL);
+			m_apScene2D[nCnt]->SetObjtype(CScene::OBJTYPE_RESULT);
 		}
 		else if (nCnt == 1)
 		{
@@ -109,7 +109,7 @@ void CResult::Init(void)
 			m_apScene2D[nCnt]->Init();
 			m_apScene2D[nCnt]->BindTexture(m_pTexture[nCnt]);
 			m_apScene2D[nCnt]->SetScene2D(D3DXVECTOR3(900.0f, 440.0f, 0.0f), 300.0f, 200.0f);
-			m_apScene2D[nCnt]->SetObjtype(CScene::OBJTYPE_TUTORIAL);
+			m_apScene2D[nCnt]->SetObjtype(CScene::OBJTYPE_RESULT);
 			m_GoalScorepos = D3DXVECTOR3(900.0f, 450.0f, 0.0f);
 		}
 	}
