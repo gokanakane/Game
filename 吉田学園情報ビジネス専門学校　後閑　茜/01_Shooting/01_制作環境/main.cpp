@@ -88,7 +88,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hInstancePrev, LPSTR lpCmdLine
 		NULL);
 
 	// 初期化処理(ウィンドウを生成してから行う)
-		if (FAILED(Init(hInstance,hWnd,TRUE)))
+		if (FAILED(Init(hInstance,hWnd,FALSE)))
 		{
 			return -1;
 		}

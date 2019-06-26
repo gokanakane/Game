@@ -13,9 +13,9 @@
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
-#define TITLE_TEXTUER "data\\TEXTURE\\BG01.png" //読み込むテクスチャ
-#define TITLE_TEXTUER1 "data\\TEXTURE\\press_enter.png" //読み込むテクスチャ
-#define TITLE_TEXTUER2 "data\\TEXTURE\\Title.png" //読み込むテクスチャ
+#define TITLE_TEXTUER "data\\TEXTURE\\BG\\BG01.png" //読み込むテクスチャ
+#define TITLE_TEXTUER1 "data\\TEXTURE\\UI\\press_enter.png" //読み込むテクスチャ
+#define TITLE_TEXTUER2 "data\\TEXTURE\\UI\\Title.png" //読み込むテクスチャ
 #define TITLE_POS_X (0)					   //タイトル左上X
 #define TITLE_POS_Y (0)					   //タイトル左上Y
 #define TITLE_WIDTH (SCREEN_WIDTH)			   //タイトルの幅

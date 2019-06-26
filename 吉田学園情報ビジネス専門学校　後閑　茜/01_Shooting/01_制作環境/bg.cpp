@@ -10,8 +10,8 @@
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
-#define BG_TEXTUER1 "data\\TEXTURE\\bg104.png" //読み込むテクスチャ
-#define BG_TEXTUER  "data\\TEXTURE\\bg103.png" //読み込むテクスチャ
+#define BG_TEXTUER1 "data\\TEXTURE\\BG\\bg104.png" //読み込むテクスチャ
+#define BG_TEXTUER  "data\\TEXTURE\\BG\\bg103.png" //読み込むテクスチャ
 #define BG_POS_X (0)					   //背景左上X
 #define BG_POS_Y (0)					   //背景左上Y
 #define BG_WIDTH (SCREEN_WIDTH)			   //背景の幅

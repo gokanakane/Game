@@ -14,7 +14,7 @@
 // マクロ定義
 //*****************************************************************************
 #define	MAX_EXPLOSION		(128)		// 弾の最大数
-#define EXPLOSION_TEXTUER "data\\TEXTURE\\explosion000.png"
+#define EXPLOSION_TEXTUER "data\\TEXTURE\\Effect\\explosion000.png"
 
 //*****************************************************************************
 // 構造体定義

@@ -19,8 +19,8 @@
 // É}ÉNÉçíËã`
 //*****************************************************************************
 #define	MAX_BULLET		(128)		// íeÇÃç≈ëÂêî
-#define BULLET_TEXTUER "data\\TEXTURE\\honou.png"
-#define BULLET_TEXTUER1 "data\\TEXTURE\\honou2.png"
+#define BULLET_TEXTUER "data\\TEXTURE\\UI\\honou.png"
+#define BULLET_TEXTUER1 "data\\TEXTURE\\UI\\honou2.png"
 #define POS_Y (620)
 #define BULLET_MOVE (1.0f)
 #define BULLET_PATTERN		(5)
