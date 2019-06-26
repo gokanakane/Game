@@ -31,10 +31,10 @@ typedef struct
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
-#define BG_TEXTUER  "data\\TEXTURE\\Tutorial003.png" //読み込むテクスチャ
-#define BG_TEXTUER1 "data\\TEXTURE\\Tutorial001.png" //読み込むテクスチャ
-#define BG_TEXTUER2 "data\\TEXTURE\\Tutorial002.png" //読み込むテクスチャ
-#define BG_TEXTUER3 "data\\TEXTURE\\Tutorial004.png" //読み込むテクスチャ
+#define BG_TEXTUER  "data\\TEXTURE\\Tutorial\\Tutorial003.png" //読み込むテクスチャ
+#define BG_TEXTUER1 "data\\TEXTURE\\Tutorial\\Tutorial001.png" //読み込むテクスチャ
+#define BG_TEXTUER2 "data\\TEXTURE\\Tutorial\\Tutorial002.png" //読み込むテクスチャ
+#define BG_TEXTUER3 "data\\TEXTURE\\Tutorial\\Tutorial004.png" //読み込むテクスチャ
 
 //*****************************************************************************
 // プロトタイプ宣言

@@ -13,12 +13,12 @@
 //*****************************************************************************
 // É}ÉNÉçíËã`
 //*****************************************************************************
-#define MESHFIELD_TEXTUER "data\\TEXTURE\\Wall000.jpg"
-#define MESHFIELD_TEXTUER1 "data\\TEXTURE\\Wall001.jpg"
-#define MESHFIELD_TEXTUER2 "data\\TEXTURE\\Wall002.jpg"
-#define MESHFIELD_TEXTUER3 "data\\TEXTURE\\Wall003.jpg"
-#define MESHFIELD_TEXTUER4 "data\\TEXTURE\\Wall008.png"
-#define MESHFIELD_TEXTUER5 "data\\TEXTURE\\Wall009.png"
+#define MESHFIELD_TEXTUER "data\\TEXTURE\\Object\\Wall000.jpg"
+#define MESHFIELD_TEXTUER1 "data\\TEXTURE\\Object\\Wall001.jpg"
+#define MESHFIELD_TEXTUER2 "data\\TEXTURE\\Object\\Wall002.jpg"
+#define MESHFIELD_TEXTUER3 "data\\TEXTURE\\Object\\Wall003.jpg"
+#define MESHFIELD_TEXTUER4 "data\\TEXTURE\\Object\\Wall008.png"
+#define MESHFIELD_TEXTUER5 "data\\TEXTURE\\Object\\Wall009.png"
 
 #define MAX_TEX (6)
 

@@ -10,11 +10,11 @@
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
-#define	TEXTURE_ITEMGET "data/TEXTURE/Item001.png"	// 読み込むテクスチャファイル名
-#define	TEXTURE_ITEMGET1 "data/TEXTURE/Item002.png"	// 読み込むテクスチャファイル名
-#define	TEXTURE_ITEMGET2 "data/TEXTURE/Item003.png"	// 読み込むテクスチャファイル名
-#define	TEXTURE_ITEMGET3 "data/TEXTURE/Item004.png"	// 読み込むテクスチャファイル名
-#define	TEXTURE_ITEMGET4 "data/TEXTURE/Key004.png"	// 読み込むテクスチャファイル名
+#define	TEXTURE_ITEMGET "data\\TEXTURE\\Object\\Item001.png"	// 読み込むテクスチャファイル名
+#define	TEXTURE_ITEMGET1 "data\\TEXTURE\\Object\\Item002.png"	// 読み込むテクスチャファイル名
+#define	TEXTURE_ITEMGET2 "data\\TEXTURE\\Object\\Item003.png"	// 読み込むテクスチャファイル名
+#define	TEXTURE_ITEMGET3 "data\\TEXTURE\\Object\\Item004.png"	// 読み込むテクスチャファイル名
+#define	TEXTURE_ITEMGET4 "data\\TEXTURE\\Object\\Key004.png"	// 読み込むテクスチャファイル名
 #define MAX_TEX (5)
 
 //*****************************************************************************

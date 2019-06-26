@@ -13,8 +13,8 @@
 #define VTX_POS_X (0)
 #define VTX_POS_Y (0)
 #define LOAD_TEX " "
-#define LOAD_TEX1 "data\\TEXTURE\\Load000.png"
-#define LOAD_TEX2 "data\\TEXTURE\\Load001.png"
+#define LOAD_TEX1 "data\\TEXTURE\\UI\\Load000.png"
+#define LOAD_TEX2 "data\\TEXTURE\\UI\\Load001.png"
 #define MAX_TEX (3)
 #define MAX_ANIM (4)
 //*****************************************************************************

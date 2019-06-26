@@ -13,10 +13,10 @@
 // マクロ定義
 //*****************************************************************************
 #define MAX_TEX (5)											 //テクスチャの数
-#define PAUSECONRINUE_TEXTUER  "data\\TEXTURE\\Continue.png"//読み込むテクスチャ
-#define PAUSERETRY_TEXTUER  "data\\TEXTURE\\Retry.png"		//読み込むテクスチャ
-#define PAUSEQUIT_TEXTUER  "data\\TEXTURE\\Quit.png"		//読み込むテクスチャ
-#define PAUSE_TEXTUER "data\\TEXTURE\\Tutorial001.png"			//読み込むテクスチャ
+#define PAUSECONRINUE_TEXTUER  "data\\TEXTURE\\Pause\\Continue.png"//読み込むテクスチャ
+#define PAUSERETRY_TEXTUER  "data\\TEXTURE\\Pause\\Retry.png"		//読み込むテクスチャ
+#define PAUSEQUIT_TEXTUER  "data\\TEXTURE\\Pause\\Quit.png"		//読み込むテクスチャ
+#define PAUSE_TEXTUER "data\\TEXTURE\\Tutorial\\Tutorial001.png"			//読み込むテクスチャ
 #define PAUSEMASK_TEXTURE " "
 #define PAUSEBG_POS_X (630)								  //ポーズ背景左上X
 #define PAUSEBG_POS_Y (180)								   //ポーズ背景左上Y

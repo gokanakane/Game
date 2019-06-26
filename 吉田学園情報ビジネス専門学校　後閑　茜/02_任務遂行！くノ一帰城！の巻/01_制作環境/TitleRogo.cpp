@@ -13,10 +13,10 @@
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
-#define TITLEROGO_TEXTUER "data\\TEXTURE\\TitleBG1.png" //読み込むテクスチャ
-#define TITLEROGO_TEXTUER1 "data\\TEXTURE\\Title001.png" //読み込むテクスチャ
-#define TITLEROGO_TEXTUER2 "data\\TEXTURE\\PRESS_ENTER.png" //読み込むテクスチャ
-#define TITLEROGO_TEXTUER3 "data\\TEXTURE\\Title002.png" //読み込むテクスチャ
+#define TITLEROGO_TEXTUER "data\\TEXTURE\\Title\\TitleBG1.png" //読み込むテクスチャ
+#define TITLEROGO_TEXTUER1 "data\\TEXTURE\\Title\\Title001.png" //読み込むテクスチャ
+#define TITLEROGO_TEXTUER2 "data\\TEXTURE\\UI\\PRESS_ENTER.png" //読み込むテクスチャ
+#define TITLEROGO_TEXTUER3 "data\\TEXTURE\\Title\\Title002.png" //読み込むテクスチャ
 
 #define TITLEROGO_POS_X (300)					   //タイトル左上X
 #define TITLEROGO_POS_Y (500)					   //タイトル左上Y

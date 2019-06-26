@@ -9,7 +9,7 @@
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
-#define MESHFIELD_TEXTUER "data\\TEXTURE\\Field000.jpg"
+#define MESHFIELD_TEXTUER "data\\TEXTURE\\BG\\Field000.jpg"
 #define STAGE_SPLIT (1)	//ステージ1を構成するフィールドの分割数
 #define STAGE_X (50.0f)
 #define STAGE_Z (50.0f)

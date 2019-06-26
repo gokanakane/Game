@@ -17,8 +17,8 @@
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
-#define TITLEROGO_TEXTUER "data\\TEXTURE\\Title000.png" //読み込むテクスチャ
-#define TITLEROGO_TEXTUER1 "data\\TEXTURE\\PRESS_ENTER.png" //読み込むテクスチャ
+#define TITLEROGO_TEXTUER "data\\TEXTURE\\UI\\Title000.png" //読み込むテクスチャ
+#define TITLEROGO_TEXTUER1 "data\\TEXTURE\\UI\\PRESS_ENTER.png" //読み込むテクスチャ
 #define TITLEROGO_POS_X (300)					   //タイトル左上X
 #define TITLEROGO_POS_Y (500)					   //タイトル左上Y
 #define TITLEROGO_WIDTH (SCREEN_WIDTH)			   //タイトルの幅

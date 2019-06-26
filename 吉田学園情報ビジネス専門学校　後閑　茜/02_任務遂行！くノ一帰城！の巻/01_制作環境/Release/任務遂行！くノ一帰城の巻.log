@@ -1,40 +1,8 @@
-﻿  bg.cpp
-  Block.cpp
-  bow.cpp
-  Door.cpp
-  enemy.cpp
-  Explosion.cpp
-  fade.cpp
-  Game.cpp
-  input.cpp
-  InterFase.cpp
-  Item.cpp
-  Life.cpp
-  main.cpp
-  migawari.cpp
-  mist.cpp
-  Pause.cpp
-  PauseBG.cpp
-  PauseContinue.cpp
-  PauseQuit.cpp
-  PauseRetry.cpp
-  コンパイル中...
-  Player.cpp
-  Ranking.cpp
-  RankingScore.cpp
-  Result.cpp
-  score.cpp
-  sound.cpp
-  time.cpp
-  Title.cpp
-  TitleBG.cpp
-  TitleRogo.cpp
-  tutorial.cpp
-  TutorialBG.cpp
+﻿  main.cpp
   コード生成しています。
-  211 of 211 functions (100.0%) were compiled, the rest were copied from previous compilation.
-    16 functions were new in current compilation
+  2 of 211 functions ( 0.9%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   コード生成が終了しました。
-  任務遂行！くノ一帰城の巻.vcxproj -> C:\Users\game112\Desktop\吉田学園情報ビジネス専門学校　後閑　茜\02_任務遂行！くノ一帰城！の巻\01_制作環境\\任務遂行！くノ一帰城の巻.exe
-  任務遂行！くノ一帰城の巻.vcxproj -> C:\Users\game112\Desktop\吉田学園情報ビジネス専門学校　後閑　茜\02_任務遂行！くノ一帰城！の巻\01_制作環境\\任務遂行！くノ一帰城の巻.pdb (Full PDB)
+  任務遂行！くノ一帰城の巻.vcxproj -> C:\Users\game112\Documents\GitHub\Game\吉田学園情報ビジネス専門学校　後閑　茜\02_任務遂行！くノ一帰城！の巻\01_制作環境\\任務遂行！くノ一帰城の巻.exe
+  任務遂行！くノ一帰城の巻.vcxproj -> C:\Users\game112\Documents\GitHub\Game\吉田学園情報ビジネス専門学校　後閑　茜\02_任務遂行！くノ一帰城！の巻\01_制作環境\\任務遂行！くノ一帰城の巻.pdb (Full PDB)

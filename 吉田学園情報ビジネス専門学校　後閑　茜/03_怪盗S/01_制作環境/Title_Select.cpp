@@ -13,9 +13,9 @@
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
-#define PAUSECONRINUE_TEXTUER  "data\\TEXTURE\\GAMESTART.png" //読み込むテクスチャ
-#define PAUSECONRINUE_TEXTUER1  "data\\TEXTURE\\Tutorial100.png" //読み込むテクスチャ
-#define PAUSECONRINUE_TEXTUER2  "data\\TEXTURE\\cursor.png" //読み込むテクスチャ
+#define PAUSECONRINUE_TEXTUER  "data\\TEXTURE\\UI\\GAMESTART.png" //読み込むテクスチャ
+#define PAUSECONRINUE_TEXTUER1  "data\\TEXTURE\\UI\\Tutorial100.png" //読み込むテクスチャ
+#define PAUSECONRINUE_TEXTUER2  "data\\TEXTURE\\UI\\cursor.png" //読み込むテクスチャ
 
 #define MAX_TEX (2)
 #define PAUSE_POS_X (320)								//ポーズ文字（YES）左上X

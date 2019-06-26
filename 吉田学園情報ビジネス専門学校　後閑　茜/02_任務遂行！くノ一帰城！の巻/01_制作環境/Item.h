@@ -13,10 +13,10 @@
 // マクロ定義
 //*****************************************************************************
 #define	MAX_ITEM		(128)		// 弾の最大数
-#define ITEM_TEXTUER "data\\TEXTURE\\Item000.png"
-#define ITEM_TEXTUER1 "data\\TEXTURE\\Item001.png"
-#define ITEM_TEXTUER2 "data\\TEXTURE\\Item002.png"
-#define ITEM_TEXTUER3 "data\\TEXTURE\\makimono.png"
+#define ITEM_TEXTUER "data\\TEXTURE\\Object\\Item000.png"
+#define ITEM_TEXTUER1 "data\\TEXTURE\\Object\\Item001.png"
+#define ITEM_TEXTUER2 "data\\TEXTURE\\Object\\Item002.png"
+#define ITEM_TEXTUER3 "data\\TEXTURE\\Object\\makimono.png"
 
 //*****************************************************************************
 // 構造体定義

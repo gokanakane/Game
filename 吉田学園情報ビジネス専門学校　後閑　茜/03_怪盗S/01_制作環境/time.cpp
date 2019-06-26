@@ -10,8 +10,8 @@
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
-#define	TEXTURE_TIME "data/TEXTURE/number000.png"	// 読み込むテクスチャファイル名
-#define	TEXTURE_TIME2 "data/TEXTURE/Clock000.png"	// 読み込むテクスチャファイル名
+#define	TEXTURE_TIME "data\\TEXTURE\\UI\\number000.png"	// 読み込むテクスチャファイル名
+#define	TEXTURE_TIME2 "data\\TEXTURE\\UI\\Clock000.png"	// 読み込むテクスチャファイル名
 #define MAX_TIME (3)
 #define TIME_RIMIT (60*90)							//制限時間
 #define MAX_TEX (2)									//テクスチャの最大数

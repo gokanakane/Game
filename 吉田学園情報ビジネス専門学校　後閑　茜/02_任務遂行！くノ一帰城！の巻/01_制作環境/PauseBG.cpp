@@ -10,7 +10,7 @@
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
-#define PAUSE_TEXTUER "data\\TEXTURE\\pauseBG.png" //読み込むテクスチャ
+#define PAUSE_TEXTUER "data\\TEXTURE\\BG\\pauseBG.png" //読み込むテクスチャ
 #define PAUSE_POS_X (280 + 150)					    //ポーズ背景左上X
 #define PAUSE_POS_Y (280 - 80)					    //ポーズ背景左上Y
 #define PAUSE_WIDTH (640 + 150)					    //ポーズ背景の幅

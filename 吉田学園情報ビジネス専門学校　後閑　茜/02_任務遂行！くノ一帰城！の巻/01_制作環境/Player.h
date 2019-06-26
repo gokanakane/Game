@@ -12,8 +12,8 @@
 // マクロ定義
 //*****************************************************************************
 #define MAXPLAYER_LIFE (3)
-#define PLAYER_TEXTUER "data\\TEXTURE\\player001.png"
-#define PLAYER_TEXTUER1 "data\\TEXTURE\\player002.png"
+#define PLAYER_TEXTUER "data\\TEXTURE\\Charactor\\player001.png"
+#define PLAYER_TEXTUER1 "data\\TEXTURE\\Charactor\\player002.png"
 
 //*****************************************************************************
 // 構造体定義

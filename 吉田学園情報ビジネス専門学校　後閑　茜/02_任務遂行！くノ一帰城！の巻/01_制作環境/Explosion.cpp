@@ -12,7 +12,7 @@
 // É}ÉNÉçíËã`
 //*****************************************************************************
 #define	MAX_EXPLOSION		(128)		// îöî≠ÇÃç≈ëÂêî
-#define EXPLOSION_TEXTUER "data\\TEXTURE\\explosion000.png"
+#define EXPLOSION_TEXTUER "data\\TEXTURE\\Effect\\explosion000.png"
 #define MAX_PATTERN (3)
 
 //*****************************************************************************

@@ -13,11 +13,11 @@
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
-#define RESULT_TEXTUER "data\\TEXTURE\\GameCliar000.png" //読み込むテクスチャ
-#define RESULT_OVER "data\\TEXTURE\\GameOver.png" //読み込むテクスチャ
-#define RESULT_TEXTUER1 "data\\TEXTURE\\Gameclear_logo.png" //読み込むテクスチャ
-#define RESULT_TEXTUER2 "data\\TEXTURE\\gameover_logo.png" //読み込むテクスチャ
-#define RESULT_CLIAR "data\\TEXTURE\\GameCliar003.png" //読み込むテクスチャ
+#define RESULT_TEXTUER "data\\TEXTURE\\Result\\GameCliar000.png" //読み込むテクスチャ
+#define RESULT_OVER "data\\TEXTURE\\Result\\GameOver.png" //読み込むテクスチャ
+#define RESULT_TEXTUER1 "data\\TEXTURE\\Result\\Gameclear_logo.png" //読み込むテクスチャ
+#define RESULT_TEXTUER2 "data\\TEXTURE\\Result\\gameover_logo.png" //読み込むテクスチャ
+#define RESULT_CLIAR "data\\TEXTURE\\Result\\GameCliar003.png" //読み込むテクスチャ
 
 #define RESULT_POS_X (0)					   //リザルト左上X
 #define RESULT_POS_Y (0)					   //リザルト左上Y

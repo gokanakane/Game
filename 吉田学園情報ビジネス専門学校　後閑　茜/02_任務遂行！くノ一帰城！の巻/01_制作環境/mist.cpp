@@ -11,7 +11,7 @@
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
-#define MIST_TEXTUER  "data\\TEXTURE\\mist.png" //読み込むテクスチャ
+#define MIST_TEXTUER  "data\\TEXTURE\\BG\\mist.png" //読み込むテクスチャ
 #define MIST_POS_X (0)					   //背景左上X
 #define MIST_POS_Y (500)					   //背景左上Y
 #define MAX_TEX  (2)					   //テクスチャの枚数

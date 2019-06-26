@@ -40,12 +40,12 @@ typedef struct
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
-#define	MAX_BLOCK		(128)		// 弾の最大数
-#define BLOCK_TEXTUER "data\\TEXTURE\\block000.jpg"
-#define BLOCK_TEXTUER1 "data\\TEXTURE\\block001.png"
-#define BLOCK_TEXTUER2 "data\\TEXTURE\\block002.png"
-#define BLOCK_TEXTUER3 "data\\TEXTURE\\block003.png"
-#define BLOCK_TEXTUER4 "data\\TEXTURE\\block004.png"
+#define	MAX_BLOCK		(128)		// ブロックの最大数
+#define BLOCK_TEXTUER "data\\TEXTURE\\Object\\block000.jpg"
+#define BLOCK_TEXTUER1 "data\\TEXTURE\\Object\\block001.png"
+#define BLOCK_TEXTUER2 "data\\TEXTURE\\Object\\block002.png"
+#define BLOCK_TEXTUER3 "data\\TEXTURE\\Object\\block003.png"
+#define BLOCK_TEXTUER4 "data\\TEXTURE\\Object\\block004.png"
 
 //*****************************************************************************
 // プロトタイプ宣言

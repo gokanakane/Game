@@ -9,8 +9,8 @@
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
-#define	TEXTURE_SCORE		"data/TEXTURE/number000.png"	// 読み込むテクスチャファイル名
-#define	TEXTURE_SCORE1		"data/TEXTURE/Score000.png"	// 読み込むテクスチャファイル名
+#define	TEXTURE_SCORE		"data\\TEXTURE\\UI\\number000.png"	// 読み込むテクスチャファイル名
+#define	TEXTURE_SCORE1		"data\\TEXTURE\\UI\\Score000.png"	// 読み込むテクスチャファイル名
 #define MAX_SCORE (8)
 #define MAX_TEX (2)
 //*****************************************************************************

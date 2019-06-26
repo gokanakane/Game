@@ -14,11 +14,11 @@
 //*****************************************************************************
 // É}ÉNÉçíËã`
 //*****************************************************************************
-#define ITEM_TEXTURE1 "data\\TEXTURE\\Item001.png"
-#define ITEM_TEXTURE2 "data\\TEXTURE\\Item002.png"
-#define ITEM_TEXTURE3 "data\\TEXTURE\\Item003.png"
-#define ITEM_TEXTURE4 "data\\TEXTURE\\Item004.png"
-#define ITEM_TEXTURE5 "data\\TEXTURE\\Key004.png"
+#define ITEM_TEXTURE1 "data\\TEXTURE\\Object\\Item001.png"
+#define ITEM_TEXTURE2 "data\\TEXTURE\\Object\\Item002.png"
+#define ITEM_TEXTURE3 "data\\TEXTURE\\Object\\Item003.png"
+#define ITEM_TEXTURE4 "data\\TEXTURE\\Object\\Item004.png"
+#define ITEM_TEXTURE5 "data\\TEXTURE\\Object\\Key004.png"
 
 
 #define MAX_TEX (5)

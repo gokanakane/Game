@@ -16,8 +16,8 @@
 // マクロ定義
 //*****************************************************************************
 #define	MAX_TYPE_ENEMY		(4)									// 敵の種類
-#define ENEMY_TEXTURE		"data\\TEXTURE\\enemy000.png"		//敵のテクスチャの名前
-#define ENEMY_TEXTURE1		"data\\TEXTURE\\enemy001.png"		//敵のテクスチャの名前0
+#define ENEMY_TEXTURE		"data\\TEXTURE\\Charactor\\enemy000.png"		//敵のテクスチャの名前
+#define ENEMY_TEXTURE1		"data\\TEXTURE\\Charactor\\enemy001.png"		//敵のテクスチャの名前0
 
 //*****************************************************************************
 // グローバル変数宣言

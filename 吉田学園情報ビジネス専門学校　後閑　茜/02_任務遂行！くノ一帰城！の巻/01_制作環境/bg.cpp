@@ -11,9 +11,9 @@
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
-#define BG_TEXTUER  "data\\TEXTURE\\sky001.jpg" //読み込むテクスチャ
-#define BG_TEXTUER1 "data\\TEXTURE\\cloud.png" //読み込むテクスチャ
-#define BG_TEXTUER2 "data\\TEXTURE\\BG000.png" //読み込むテクスチャ
+#define BG_TEXTUER  "data\\TEXTURE\\BG\\sky001.jpg" //読み込むテクスチャ
+#define BG_TEXTUER1 "data\\TEXTURE\\BG\\cloud.png" //読み込むテクスチャ
+#define BG_TEXTUER2 "data\\TEXTURE\\BG\\BG000.png" //読み込むテクスチャ
 #define BG_POS_X (0)					   //背景左上X
 #define BG_POS_Y (300)					   //背景左上Y
 #define BG_WIDTH (SCREEN_WIDTH)			   //背景の幅

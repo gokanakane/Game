@@ -17,8 +17,8 @@
 // É}ÉNÉçíËã`
 //*****************************************************************************
 #define	MAX_BOW		(120)		// íeÇÃç≈ëÂêî
-#define BOW_TEXTUER "data\\TEXTURE\\bow.png"
-#define BOW_TEXTUER1 "data\\TEXTURE\\bow001.png"
+#define BOW_TEXTUER "data\\TEXTURE\\Object\\bow.png"
+#define BOW_TEXTUER1 "data\\TEXTURE\\Object\\bow001.png"
 
 #define POS_Y (620)
 #define BOW_MOVE (1.0f)

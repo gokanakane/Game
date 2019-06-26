@@ -14,12 +14,12 @@
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
-#define RANKING_TEXTURE "data\\TEXTURE\\Ranking000.png" //ランキング文字
+#define RANKING_TEXTURE "data\\TEXTURE\\Ranking\\Ranking000.png" //ランキング文字
 #define RANKING_TEXTURE0 "　" //背景
-#define RANKING_TEXTURE1 "data\\TEXTURE\\Dot.png"		//ドット（スクロール）
-#define RANKING_TEXTURE2 "data\\TEXTURE\\Ranking001.png"//順位
-#define RANKING_TEXTURE3 "data\\TEXTURE\\Ranking002.png"//怪盗
-#define RANKING_TEXTURE4 "data\\TEXTURE\\Ranking003.png"//ペンダント（アニメーション）
+#define RANKING_TEXTURE1 "data\\TEXTURE\\BG\\Dot.png"			//ドット（スクロール）
+#define RANKING_TEXTURE2 "data\\TEXTURE\\Ranking\\Ranking001.png"//順位
+#define RANKING_TEXTURE3 "data\\TEXTURE\\Ranking\\Ranking002.png"//怪盗
+#define RANKING_TEXTURE4 "data\\TEXTURE\\Ranking\\Ranking003.png"//ペンダント（アニメーション）
 #define Ranking_POS_X (300)					   //タイトル左上X
 #define Ranking_POS_Y (500)					   //タイトル左上Y
 #define Ranking_WIDTH (SCREEN_WIDTH)			   //タイトルの幅

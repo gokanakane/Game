@@ -10,9 +10,9 @@
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
-#define	TEXTURE_ITEMUI "data/TEXTURE/Item000.png"	// 読み込むテクスチャファイル名
-#define	TEXTURE_ITEMUI1 "data/TEXTURE/Item005.png"	// 読み込むテクスチャファイル名
-#define MAX_HEIGTH (6)								//窓を積む高さ
+#define	TEXTURE_ITEMUI "data\\TEXTURE\\UI\\Item000.png"		// 読み込むテクスチャファイル名
+#define	TEXTURE_ITEMUI1 "data\\TEXTURE\\UI\\Item005.png"	// 読み込むテクスチャファイル名
+#define MAX_HEIGTH (6)										//窓を積む高さ
 #define MAX_TEX (2)
 //*****************************************************************************
 // プロトタイプ宣言
