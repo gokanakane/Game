@@ -6,25 +6,14 @@
 //=============================================================================
 #include "main.h"
 #include "Title.h"
-#include"input.h"
+#include "input.h"
 #include "fade.h"
-#include"sound.h"
+#include "sound.h"
 
-//*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define TITLE_TEXTUER "data\\TEXTURE\\BG\\BG01.png" //読み込むテクスチャ
-#define TITLE_TEXTUER1 "data\\TEXTURE\\UI\\press_enter.png" //読み込むテクスチャ
-#define TITLE_TEXTUER2 "data\\TEXTURE\\UI\\Title.png" //読み込むテクスチャ
-#define TITLE_POS_X (0)					   //タイトル左上X
-#define TITLE_POS_Y (0)					   //タイトル左上Y
-#define TITLE_WIDTH (SCREEN_WIDTH)			   //タイトルの幅
-#define TITLE_HEIGHT (SCREEN_HEIGHT)		   //タイトル高さ
-#define MAX_TEX (3)
 //*****************************************************************************
 // グローバル変数
 //*****************************************************************************
-LPDIRECT3DTEXTURE9 g_pTextureTitle[MAX_TEX] = {};//テクスチャへのポインタ
+LPDIRECT3DTEXTURE9 g_pTextureTitle[MAX_TITLETEX] = {};//テクスチャへのポインタ
 LPDIRECT3DVERTEXBUFFER9 g_pVtxBuffTitle = NULL;
 
 //=============================================================================
@@ -45,7 +34,7 @@ void InitTitle(void)
 
 
 	//頂点バッファの生成
-	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4 * MAX_TEX,
+	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4 * MAX_TITLETEX,
 								D3DUSAGE_WRITEONLY,
 								FVF_VERTEX_2D,
 								D3DPOOL_MANAGED,
@@ -141,7 +130,7 @@ void InitTitle(void)
 void UninitTitle(void)
 {
 	int nCnt;
-	for (nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (nCnt = 0; nCnt < MAX_TITLETEX; nCnt++)
 	{
 		//テクスチャの破棄
 		if (g_pTextureTitle[nCnt] != NULL)
@@ -197,7 +186,7 @@ void DrawTitle(void)
 	//頂点フォーマットの設定
 	pDevice->SetFVF(FVF_VERTEX_2D);
 	
-	for (nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (nCnt = 0; nCnt < MAX_TITLETEX; nCnt++)
 	{
 		//テクスチャの設定
 		pDevice->SetTexture(0, g_pTextureTitle[nCnt]);

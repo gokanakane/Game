@@ -13,16 +13,6 @@
 #include "Player.h"
 
 //*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define	MAX_TYPE_ENEMY		(4)												// 敵の種類
-#define ENEMY_TEXTURE0		"data\\TEXTURE\\Charactor\\enemy000_a.png"		//敵のテクスチャの名前0
-#define ENEMY_TEXTURE1		"data\\TEXTURE\\Charactor\\enemy001_a.png"		//敵のテクスチャの名前1
-#define ENEMY_TEXTURE2		"data\\TEXTURE\\Charactor\\enemy002_a.png"		//敵のテクスチャの名前2
-#define ENEMY_TEXTURE3		"data\\TEXTURE\\Charactor\\enemy003_a.png"		//敵のテクスチャの名前3
-#define PLAYER_PATTERN		(2)
-
-//*****************************************************************************
 // グローバル変数宣言
 //*****************************************************************************
 LPDIRECT3DTEXTURE9		g_pTextureEnemy[MAX_TYPE_ENEMY] = {};	// テクスチャへのポインタ

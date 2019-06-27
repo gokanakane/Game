@@ -11,22 +11,9 @@
 #include "sound.h"
 
 //*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define RESULT_TEXTUER "data\\TEXTURE\\BG\\Bg111.jpg" //読み込むテクスチャ
-#define RESULT_OVER "data\\TEXTURE\\BG\\Bg110.png" //読み込むテクスチャ
-#define RESULT_TEXTUER1 "data\\TEXTURE\\UI\\gameclear_logo.png" //読み込むテクスチャ
-#define RESULT_TEXTUER2 "data\\TEXTURE\\UI\\gameover_logo.png" //読み込むテクスチャ
-#define RESULT_POS_X (0)					   //リザルト左上X
-#define RESULT_POS_Y (0)					   //リザルト左上Y
-#define RESULT_WIDTH (SCREEN_WIDTH)			   //リザルトの幅
-#define RESULT_HEIGHT (SCREEN_HEIGHT)		   //リザルト高さ
-#define MAX_TEX (2)							   //テクスチャの最大数
-
-//*****************************************************************************
 // グローバル変数
 //*****************************************************************************
-LPDIRECT3DTEXTURE9 g_pTextureResult[MAX_TEX] = {};//テクスチャへのポインタ
+LPDIRECT3DTEXTURE9 g_pTextureResult[MAX_RESULTTEX] = {};//テクスチャへのポインタ
 LPDIRECT3DVERTEXBUFFER9 g_pVtxBuffResult = NULL;
 
 //=============================================================================
@@ -59,7 +46,7 @@ void InitResult(void)
 	}
 
 	//頂点バッファの生成
-	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4 * MAX_TEX,
+	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4 * MAX_RESULTTEX,
 		D3DUSAGE_WRITEONLY,
 		FVF_VERTEX_2D,
 		D3DPOOL_MANAGED,
@@ -128,7 +115,7 @@ void InitResult(void)
 void UninitResult(void)
 {
 	int nCnt;
-	for (nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (nCnt = 0; nCnt < MAX_RESULTTEX; nCnt++)
 	{
 		//テクスチャの破棄
 		if (g_pTextureResult[nCnt] != NULL)
@@ -184,7 +171,7 @@ void DrawResult(void)
 	//頂点フォーマットの設定
 	pDevice->SetFVF(FVF_VERTEX_2D);
 	
-	for (nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (nCnt = 0; nCnt < MAX_RESULTTEX; nCnt++)
 	{
 		//テクスチャの設定
 		pDevice->SetTexture(0, g_pTextureResult[nCnt]);

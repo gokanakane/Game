@@ -28,6 +28,10 @@
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
+#define CLASS_NAME		"WindowClass"		// ウインドウクラスの名前
+#define WINDOW_NAME		"Shooting"	// ウインドウの名前(キャプション名)
+#define MAX_VERTEX_DATA (4)
+
 #define SCREEN_WIDTH	(1280)		// ウインドウの幅
 #define SCREEN_HEIGHT	(720)		// ウインドウの高さ
 #define FVF_VERTEX_2D ( D3DFVF_XYZRHW| D3DFVF_DIFFUSE|D3DFVF_TEX1) //頂点フォーマット・テクスチャ座標
