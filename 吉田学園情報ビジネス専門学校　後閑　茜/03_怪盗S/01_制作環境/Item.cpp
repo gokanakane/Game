@@ -11,17 +11,6 @@
 #include "score.h"
 #include "ItemGetUI.h"
 #include "sound.h"
-//*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define ITEM_TEXTURE1 "data\\TEXTURE\\Object\\Item001.png"
-#define ITEM_TEXTURE2 "data\\TEXTURE\\Object\\Item002.png"
-#define ITEM_TEXTURE3 "data\\TEXTURE\\Object\\Item003.png"
-#define ITEM_TEXTURE4 "data\\TEXTURE\\Object\\Item004.png"
-#define ITEM_TEXTURE5 "data\\TEXTURE\\Object\\Key004.png"
-
-
-#define MAX_TEX (5)
 
 //*****************************************************************************
 // プロトタイプ宣言
@@ -32,7 +21,7 @@ void MakeVertexItem(LPDIRECT3DDEVICE9 pDevice);
 // グローバル変数
 //*****************************************************************************
 LPDIRECT3DVERTEXBUFFER9 g_pVtxBuffItem= NULL;
-LPDIRECT3DTEXTURE9 g_pTextureItem[MAX_TEX] = {};//テクスチャへのポインタ
+LPDIRECT3DTEXTURE9 g_pTextureItem[MAX_ITEMTEX] = {};//テクスチャへのポインタ
 Item g_Item[MAX_ITEM];					//壁の最大数
 //=============================================================================
 // 初期化処理
@@ -64,7 +53,7 @@ void UninitItem(void)
 		g_pVtxBuffItem->Release();
 		g_pVtxBuffItem = NULL;
 	}
-	for (int nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (int nCnt = 0; nCnt < MAX_ITEMTEX; nCnt++)
 	{
 		if (g_pTextureItem[nCnt] != NULL)
 		{
@@ -81,7 +70,7 @@ void UpdateItem(void)
 {
 	Player*pPlayer = GetPlayer();
 
-	for (int nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (int nCnt = 0; nCnt < MAX_ITEMTEX; nCnt++)
 	{
 		if (g_Item[nCnt].bUse == true)
 		{

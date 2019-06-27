@@ -8,6 +8,17 @@
 #define _FADE_H_
 
 #include "main.h"
+//*****************************************************************************
+// マクロ定義
+//*****************************************************************************
+#define NUM_POLYGON (2)
+#define VTX_POS_X (0)
+#define VTX_POS_Y (0)
+#define LOAD_TEX " "
+#define LOAD_TEX1 "data\\TEXTURE\\UI\\Load000.png"
+#define LOAD_TEX2 "data\\TEXTURE\\UI\\Load001.png"
+#define MAX_FADETEX (3)
+#define MAX_ANIM (4)
 
 //*************************************
 // フェードの状態

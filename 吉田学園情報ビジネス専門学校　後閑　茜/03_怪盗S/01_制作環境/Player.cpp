@@ -20,27 +20,6 @@
 #include "sound.h"
 
 //*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define PLAYER_TEXTUER " "
-#define PLAYER_1 "data\\MODEL\\PC\\00_Upper Body.x"		//上半身[0]
-#define PLAYER_2 "data\\MODEL\\PC\\01_Lower Body.x"		//下半身[1]
-#define PLAYER_3 "data\\MODEL\\PC\\02_Fase.x"			//顔[2]
-#define PLAYER_4 "data\\MODEL\\PC\\03_Second_Arm_R.x"	//右二の腕[3]
-#define PLAYER_5 "data\\MODEL\\PC\\04_Arm_R.x"			//右腕[4]
-#define PLAYER_6 "data\\MODEL\\PC\\05_Hand_R.x"			//右手[5]
-#define PLAYER_7 "data\\MODEL\\PC\\06_Second_Arm_L.x"	//左二の腕[6]
-#define PLAYER_8 "data\\MODEL\\PC\\07_Arm_L.x"			//左腕[7]
-#define PLAYER_9 "data\\MODEL\\PC\\08_Hand_L.x"			//左手[8]
-#define PLAYER_10 "data\\MODEL\\PC\\09_Thugus_R.x"		//右太もも[9]
-#define PLAYER_11 "data\\MODEL\\PC\\10_Calf_R.x"		//右ふくらはぎ[10]
-#define PLAYER_12 "data\\MODEL\\PC\\11_Foot_R.x"		//右足[11]
-#define PLAYER_13 "data\\MODEL\\PC\\12_Thugus_L.x"		//左太もも[12]
-#define PLAYER_14 "data\\MODEL\\PC\\13_Calf_L.x"		//左ふくらはぎ[13]
-#define PLAYER_15 "data\\MODEL\\PC\\14_Foot_L.x"		//左足[14]
-#define PLAYER_MOVR (1.0f)
-
-//*****************************************************************************
 // グローバル変数
 //*****************************************************************************
 LPDIRECT3DTEXTURE9 g_pTexturePlayer = NULL;//テクスチャへのポインタ

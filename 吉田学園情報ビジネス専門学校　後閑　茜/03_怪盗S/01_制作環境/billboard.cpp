@@ -10,15 +10,6 @@
 #include "Game.h"
 #include "score.h"
 
-//*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define KEY_TEXTUER "data\\TEXTURE\\Key000.png"
-#define KEY_TEXTUER1 "data\\TEXTURE\\Key001.png"
-#define KEY_TEXTUER2 "data\\TEXTURE\\Key002.png"
-#define KEY_TEXTUER3 "data\\TEXTURE\\Key003.png"
-
-#define MAX_TEX (4)
 
 //*****************************************************************************
 // プロトタイプ宣言

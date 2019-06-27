@@ -13,6 +13,12 @@
 // マクロ定義
 //*****************************************************************************
 #define MAX_BILLBOARD (128)		//壁の最大値
+#define MAX_TEX (4)
+
+#define KEY_TEXTUER "data\\TEXTURE\\Key000.png"
+#define KEY_TEXTUER1 "data\\TEXTURE\\Key001.png"
+#define KEY_TEXTUER2 "data\\TEXTURE\\Key002.png"
+#define KEY_TEXTUER3 "data\\TEXTURE\\Key003.png"
 
 //*****************************************************************************
 // 構造体

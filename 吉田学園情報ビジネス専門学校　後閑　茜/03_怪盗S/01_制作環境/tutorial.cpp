@@ -11,21 +11,9 @@
 #include "sound.h"
 
 //*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define BG_POS_X (0)					   //背景左上X
-#define BG_POS_Y (0)					   //背景左上Y
-#define TUTOTIAL_TEXTUER0 " "
-#define TUTOTIAL_TEXTUER "data\\TEXTURE\\Tutorial\\Tutorial204.png"
-#define TUTOTIAL_TEXTUER1 "data\\TEXTURE\\Tutorial\\Tutorial001.png"
-#define TUTOTIAL_TEXTUER2 "data\\TEXTURE\\Tutorial\\Tutorial002-5.png"
-#define MAX_TEX  (4)					   //テクスチャの枚数
-#define MAX_ANIM (4)
-
-//*****************************************************************************
 // グローバル変数
 //*****************************************************************************
-LPDIRECT3DTEXTURE9 g_pTextureTutorial[MAX_TEX] = {};//テクスチャへのポインタ
+LPDIRECT3DTEXTURE9 g_pTextureTutorial[MAX_TUTORIALTEX] = {};//テクスチャへのポインタ
 LPDIRECT3DVERTEXBUFFER9 g_pVtxBuffTutorial = NULL;
 
 int g_nCntAnimT;									//アニメーションカウンター
@@ -52,7 +40,7 @@ void InitTutorial(void)
 	D3DXCreateTextureFromFile(pDevice, TUTOTIAL_TEXTUER2, &g_pTextureTutorial[3]);
 
 	//頂点バッファの生成
-	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4 * MAX_TEX,
+	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4 * MAX_TUTORIALTEX,
 		D3DUSAGE_WRITEONLY,
 		FVF_VERTEX_2D,
 		D3DPOOL_MANAGED,
@@ -169,7 +157,7 @@ void InitTutorial(void)
 //=============================================================================
 void UninitTutorial(void)
 {
-	for (int nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (int nCnt = 0; nCnt < MAX_TUTORIALTEX; nCnt++)
 	{
 		if (g_pTextureTutorial[nCnt] != NULL)
 		{
@@ -274,7 +262,7 @@ void DrawTutorial(void)
 	//頂点フォーマットの設定
 	pDevice->SetFVF(FVF_VERTEX_2D);
 
-	for (int nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (int nCnt = 0; nCnt < MAX_TUTORIALTEX; nCnt++)
 	{
 		//テクスチャの設定
 		pDevice->SetTexture(0, g_pTextureTutorial[nCnt]);

@@ -11,19 +11,6 @@
 #include "Font.h"
 
 //*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define PAUSECONRINUE_TEXTUER  "data\\TEXTURE\\UI\\GAMESTART.png" //読み込むテクスチャ
-#define PAUSECONRINUE_TEXTUER1  "data\\TEXTURE\\UI\\Tutorial100.png" //読み込むテクスチャ
-#define PAUSECONRINUE_TEXTUER2  "data\\TEXTURE\\UI\\cursor.png" //読み込むテクスチャ
-
-#define MAX_TEX (2)
-#define PAUSE_POS_X (320)								//ポーズ文字（YES）左上X
-#define PAUSE_POS_Y (300)								//ポーズ文字（YES）左上Y
-#define PAUSE_WIDTH (990)								//ポーズ文字（YES）の幅
-#define PAUSE_HEIGHT (500)								//ポーズ文字（YES）高さ
-
-//*****************************************************************************
 // グローバル変数
 //*****************************************************************************
 LPDIRECT3DTEXTURE9 g_pTitleSelect[MAX_TEX] = {};//テクスチャへのポインタ
@@ -43,9 +30,9 @@ void InitTitleSelect(void)
 	g_nSelectManuT = 0;
 
 	//テクスチャ読み込み
-	D3DXCreateTextureFromFile(pDevice, PAUSECONRINUE_TEXTUER, &g_pTitleSelect[0]);
-	D3DXCreateTextureFromFile(pDevice, PAUSECONRINUE_TEXTUER1, &g_pTitleSelect[1]);
-	//D3DXCreateTextureFromFile(pDevice, PAUSECONRINUE_TEXTUER2, &g_pTitleSelect[2]);
+	D3DXCreateTextureFromFile(pDevice, TITLESELECT_TEXTUER, &g_pTitleSelect[0]);
+	D3DXCreateTextureFromFile(pDevice, TITLESELECT_TEXTUER1, &g_pTitleSelect[1]);
+	//D3DXCreateTextureFromFile(pDevice, TITLESELECT_TEXTUER2, &g_pTitleSelect[2]);
 
 	//頂点バッファの生成
 	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4 * MAX_TEX,
@@ -61,10 +48,10 @@ void InitTitleSelect(void)
 	for (int nCnt = 0; nCnt < MAX_TEX; nCnt++)
 	{
 		//座標設定
-		pVtx[0].pos = D3DXVECTOR3(PAUSE_POS_X, PAUSE_POS_Y + (nCnt * 200.0f), 0.0f);
-		pVtx[1].pos = D3DXVECTOR3(PAUSE_WIDTH, PAUSE_POS_Y + (nCnt * 200.0f), 0.0f);
-		pVtx[2].pos = D3DXVECTOR3(PAUSE_POS_X, PAUSE_HEIGHT + (nCnt * 200.0f), 0.0f);
-		pVtx[3].pos = D3DXVECTOR3(PAUSE_WIDTH, PAUSE_HEIGHT + (nCnt * 200.0f), 0.0f);
+		pVtx[0].pos = D3DXVECTOR3(TITLESELECT_POS_X, TITLESELECT_POS_Y + (nCnt * 200.0f), 0.0f);
+		pVtx[1].pos = D3DXVECTOR3(TITLESELECT_WIDTH, TITLESELECT_POS_Y + (nCnt * 200.0f), 0.0f);
+		pVtx[2].pos = D3DXVECTOR3(TITLESELECT_POS_X, TITLESELECT_HEIGHT + (nCnt * 200.0f), 0.0f);
+		pVtx[3].pos = D3DXVECTOR3(TITLESELECT_WIDTH, TITLESELECT_HEIGHT + (nCnt * 200.0f), 0.0f);
 
 		//rhwの設定
 		pVtx[0].rhw = 1.0f;

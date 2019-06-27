@@ -8,14 +8,6 @@
 #include "time.h"
 
 //*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define	TEXTURE_TIME "data\\TEXTURE\\UI\\number000.png"	// 読み込むテクスチャファイル名
-#define	TEXTURE_TIME2 "data\\TEXTURE\\UI\\Clock000.png"	// 読み込むテクスチャファイル名
-#define MAX_TIME (3)
-#define TIME_RIMIT (60*90)							//制限時間
-#define MAX_TEX (2)									//テクスチャの最大数
-//*****************************************************************************
 // プロトタイプ宣言
 //*****************************************************************************
 void MakeVertexTime(LPDIRECT3DDEVICE9 pDevice);
@@ -23,7 +15,7 @@ void MakeVertexTime(LPDIRECT3DDEVICE9 pDevice);
 //*****************************************************************************
 // グローバル変数
 //*****************************************************************************
-LPDIRECT3DTEXTURE9		g_pTextureTime[MAX_TEX] = {};		// テクスチャへのポインタ
+LPDIRECT3DTEXTURE9		g_pTextureTime[MAX_TIMETEX] = {};		// テクスチャへのポインタ
 LPDIRECT3DVERTEXBUFFER9 g_pVtxBuffTime = NULL;		// 頂点バッファへのポインタ
 int g_nTime;										// 制限時間
 int g_aTimeData[MAX_TIME];

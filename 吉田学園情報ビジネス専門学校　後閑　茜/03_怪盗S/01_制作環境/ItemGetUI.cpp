@@ -8,16 +8,6 @@
 #include "sound.h"
 
 //*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define	TEXTURE_ITEMGET "data\\TEXTURE\\Object\\Item001.png"	// 読み込むテクスチャファイル名
-#define	TEXTURE_ITEMGET1 "data\\TEXTURE\\Object\\Item002.png"	// 読み込むテクスチャファイル名
-#define	TEXTURE_ITEMGET2 "data\\TEXTURE\\Object\\Item003.png"	// 読み込むテクスチャファイル名
-#define	TEXTURE_ITEMGET3 "data\\TEXTURE\\Object\\Item004.png"	// 読み込むテクスチャファイル名
-#define	TEXTURE_ITEMGET4 "data\\TEXTURE\\Object\\Key004.png"	// 読み込むテクスチャファイル名
-#define MAX_TEX (5)
-
-//*****************************************************************************
 // プロトタイプ宣言
 //*****************************************************************************
 void MakeVertexItemGetUI(LPDIRECT3DDEVICE9 pDevice);
@@ -25,9 +15,9 @@ void MakeVertexItemGetUI(LPDIRECT3DDEVICE9 pDevice);
 //*****************************************************************************
 // グローバル変数
 //*****************************************************************************
-LPDIRECT3DTEXTURE9		g_pTextureItemGetUI[MAX_TEX] = {};		// テクスチャへのポインタ
+LPDIRECT3DTEXTURE9		g_pTextureItemGetUI[MAX_ITEMGETTEX] = {};		// テクスチャへのポインタ
 LPDIRECT3DVERTEXBUFFER9 g_pVtxBuffItemGetUI = NULL;		// 頂点バッファへのポインタ
-ItemUI g_ItemUI[MAX_TEX];
+ItemUI g_ItemUI[MAX_ITEMGETTEX];
 //=============================================================================
 // 初期化処理
 //=============================================================================
@@ -36,7 +26,7 @@ void InitItemGetUI(void)
 	LPDIRECT3DDEVICE9 pDevice = GetDevice();
 
 
-	for (int nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (int nCnt = 0; nCnt < MAX_ITEMGETTEX; nCnt++)
 	{
 		g_ItemUI[nCnt].nType = 0;
 		g_ItemUI[nCnt].bUse = false;
@@ -51,7 +41,7 @@ void InitItemGetUI(void)
 //=============================================================================
 void UninitItemGetUI(void)
 {
-	for (int nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (int nCnt = 0; nCnt < MAX_ITEMGETTEX; nCnt++)
 	{
 		// テクスチャの開放
 		if (g_pTextureItemGetUI[nCnt] != NULL)
@@ -91,7 +81,7 @@ void DrawItemGetUI(void)
 	// 頂点フォーマットの設定
 	pDevice->SetFVF(FVF_VERTEX_2D);
 
-	for (nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (nCnt = 0; nCnt < MAX_ITEMGETTEX; nCnt++)
 	{
 		if (g_ItemUI[nCnt].bUse == true)
 		{
@@ -122,7 +112,7 @@ void MakeVertexItemGetUI(LPDIRECT3DDEVICE9 pDevice)
 
 
 	// 頂点バッファを生成
-	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4 * MAX_TEX,
+	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4 * MAX_ITEMGETTEX,
 		D3DUSAGE_WRITEONLY,
 		FVF_VERTEX_2D,
 		D3DPOOL_MANAGED,
@@ -132,7 +122,7 @@ void MakeVertexItemGetUI(LPDIRECT3DDEVICE9 pDevice)
 	//頂点をロックして頂点データへのポインタを取得
 	g_pVtxBuffItemGetUI->Lock(0, 0, (void**)&pVtx, 0);
 
-	for (int nCntHeigth = 0; nCntHeigth < MAX_TEX; nCntHeigth++)
+	for (int nCntHeigth = 0; nCntHeigth < MAX_ITEMGETTEX; nCntHeigth++)
 	{
 		// 頂点情報を設定	
 		pVtx[0].pos = D3DXVECTOR3(1160.0f, 190.0f + (130.0f * nCntHeigth), 0.0f);
@@ -171,7 +161,7 @@ void MakeVertexItemGetUI(LPDIRECT3DDEVICE9 pDevice)
 int SetItemGetUI(int nType)
 {
 	int nCnt;
-	for (nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (nCnt = 0; nCnt < MAX_ITEMGETTEX; nCnt++)
 	{
 		if (g_ItemUI[nCnt].bUse == false)
 		{

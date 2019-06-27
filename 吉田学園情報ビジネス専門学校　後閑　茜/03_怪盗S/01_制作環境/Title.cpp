@@ -14,18 +14,6 @@
 #include "Title_Select.h"
 #include "Obj.h"
 #include "Wall.h"
-//*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define TITLEROGO_TEXTUER "data\\TEXTURE\\UI\\Title000.png" //読み込むテクスチャ
-#define TITLEROGO_TEXTUER1 "data\\TEXTURE\\UI\\PRESS_ENTER.png" //読み込むテクスチャ
-#define TITLEROGO_POS_X (300)					   //タイトル左上X
-#define TITLEROGO_POS_Y (500)					   //タイトル左上Y
-#define TITLEROGO_WIDTH (SCREEN_WIDTH)			   //タイトルの幅
-#define TITLEROGO_HEIGHT (SCREEN_HEIGHT)		   //タイトル高さ
-#define MAX_TEX (2)
-#define MAX_ANIMATION (4)
-
 
 //*****************************************************************************
 // グローバル変数

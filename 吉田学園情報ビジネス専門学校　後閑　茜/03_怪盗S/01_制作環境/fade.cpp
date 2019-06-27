@@ -7,17 +7,6 @@
 #include "fade.h"
 
 //*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define NUM_POLYGON (2)
-#define VTX_POS_X (0)
-#define VTX_POS_Y (0)
-#define LOAD_TEX " "
-#define LOAD_TEX1 "data\\TEXTURE\\UI\\Load000.png"
-#define LOAD_TEX2 "data\\TEXTURE\\UI\\Load001.png"
-#define MAX_TEX (3)
-#define MAX_ANIM (4)
-//*****************************************************************************
 // プロトタイプ宣言
 //*****************************************************************************
 void MakeVertexFade(LPDIRECT3DDEVICE9 pDevice);
@@ -25,7 +14,7 @@ void MakeVertexFade(LPDIRECT3DDEVICE9 pDevice);
 //*****************************************************************************
 // グローバル変数
 //*****************************************************************************
-LPDIRECT3DTEXTURE9		g_pTextureFade[MAX_TEX] = {};	// テクスチャへのポインタ
+LPDIRECT3DTEXTURE9		g_pTextureFade[MAX_FADETEX] = {};	// テクスチャへのポインタ
 LPDIRECT3DVERTEXBUFFER9 g_pVtxBuffFade = NULL;	// 頂点バッファへのポインタ
 FADE					g_fade;					// フェード状態
 MODE					g_modeNext;				// 次のモード
@@ -57,7 +46,7 @@ void InitFade(MODE modeNext)
 //=============================================================================
 void UninitFade(void)
 {
-	for (int nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (int nCnt = 0; nCnt < MAX_FADETEX; nCnt++)
 	{
 		// テクスチャの開放
 		if (g_pTextureFade[nCnt] != NULL)
@@ -173,7 +162,7 @@ void DrawFade(void)
 
 	// 頂点フォーマットの設定
 	pDevice->SetFVF(FVF_VERTEX_2D);
-	for (int nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (int nCnt = 0; nCnt < MAX_FADETEX; nCnt++)
 	{
 		// テクスチャの設定
 		pDevice->SetTexture(0, g_pTextureFade[nCnt]);
@@ -199,7 +188,7 @@ void MakeVertexFade(LPDIRECT3DDEVICE9 pDevice)
 
 
 	// 頂点バッファを生成
-	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4 * MAX_TEX,
+	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4 * MAX_FADETEX,
 		D3DUSAGE_WRITEONLY,
 		FVF_VERTEX_2D,
 		D3DPOOL_MANAGED,

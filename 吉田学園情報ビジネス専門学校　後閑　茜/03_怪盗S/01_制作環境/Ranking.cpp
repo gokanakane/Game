@@ -12,24 +12,9 @@
 #include"sound.h"
 
 //*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define RANKING_TEXTURE "data\\TEXTURE\\Ranking\\Ranking000.png" //ランキング文字
-#define RANKING_TEXTURE0 "　" //背景
-#define RANKING_TEXTURE1 "data\\TEXTURE\\BG\\Dot.png"			//ドット（スクロール）
-#define RANKING_TEXTURE2 "data\\TEXTURE\\Ranking\\Ranking001.png"//順位
-#define RANKING_TEXTURE3 "data\\TEXTURE\\Ranking\\Ranking002.png"//怪盗
-#define RANKING_TEXTURE4 "data\\TEXTURE\\Ranking\\Ranking003.png"//ペンダント（アニメーション）
-#define Ranking_POS_X (300)					   //タイトル左上X
-#define Ranking_POS_Y (500)					   //タイトル左上Y
-#define Ranking_WIDTH (SCREEN_WIDTH)			   //タイトルの幅
-#define Ranking_HEIGHT (SCREEN_HEIGHT)		   //タイトル高さ
-#define MAX_TEX (6)
-#define MAX_ANIM (4)							//アニメーションパターン
-//*****************************************************************************
 // グローバル変数
 //*****************************************************************************
-LPDIRECT3DTEXTURE9 g_pTextureRanking[MAX_TEX] = {};//テクスチャへのポインタ
+LPDIRECT3DTEXTURE9 g_pTextureRanking[MAX_RANKINGTEX] = {};//テクスチャへのポインタ
 LPDIRECT3DVERTEXBUFFER9 g_pVtxBuffRanking = NULL;
 int g_nAlphaRogo;
 int g_nCntTitleRanking;			//フェード時間
@@ -58,7 +43,7 @@ void InitRanking(void)
 	D3DXCreateTextureFromFile(pDevice, RANKING_TEXTURE3, &g_pTextureRanking[5]);
 
 	//頂点バッファの生成
-	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4 * MAX_TEX,
+	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4 * MAX_RANKINGTEX,
 		D3DUSAGE_WRITEONLY,
 		FVF_VERTEX_2D,
 		D3DPOOL_MANAGED,
@@ -228,7 +213,7 @@ void InitRanking(void)
 //=============================================================================
 void UninitRanking(void)
 {
-	for (int nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (int nCnt = 0; nCnt < MAX_RANKINGTEX; nCnt++)
 	{	//テクスチャの破棄
 		if (g_pTextureRanking[nCnt] != NULL)
 		{
@@ -320,7 +305,7 @@ void DrawRanking(void)
 	//頂点フォーマットの設定
 	pDevice->SetFVF(FVF_VERTEX_2D);
 
-	for (int nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (int nCnt = 0; nCnt < MAX_RANKINGTEX; nCnt++)
 	{	
 		//テクスチャの設定
 		pDevice->SetTexture(0, g_pTextureRanking[nCnt]);

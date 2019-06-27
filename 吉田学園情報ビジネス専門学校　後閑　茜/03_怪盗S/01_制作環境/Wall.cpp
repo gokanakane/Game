@@ -1,6 +1,6 @@
 //=============================================================================
 //
-// ステージ1処理 [Wall.cpp]
+// ステージ1壁処理 [Wall.cpp]
 // Author : 後閑茜
 //
 //=============================================================================
@@ -10,21 +10,6 @@
 #include "ItemGetUI.h"
 #include "Item.h"
 #include "sound.h"
-//*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define MESHFIELD_TEXTUER "data\\TEXTURE\\Object\\Wall000.jpg"
-#define MESHFIELD_TEXTUER1 "data\\TEXTURE\\Object\\Wall001.jpg"
-#define MESHFIELD_TEXTUER2 "data\\TEXTURE\\Object\\Wall002.jpg"
-#define MESHFIELD_TEXTUER3 "data\\TEXTURE\\Object\\Wall003.jpg"
-#define MESHFIELD_TEXTUER4 "data\\TEXTURE\\Object\\Wall008.png"
-#define MESHFIELD_TEXTUER5 "data\\TEXTURE\\Object\\Wall009.png"
-
-#define MAX_TEX (6)
-
-#define WALLVTX_X (50.0f)		//頂点を置く横間隔
-#define WALLVTX_Y (50.0f)		//頂点を置く高さ間隔
-
 
 //*****************************************************************************
 // プロトタイプ宣言
@@ -35,7 +20,7 @@ void MakeVertexWall(LPDIRECT3DDEVICE9 pDevice);
 // グローバル変数
 //*****************************************************************************
 LPDIRECT3DVERTEXBUFFER9 g_pVtxBuffWall[MAX_WALL] = {};	//頂点バッファへのポインタ
-LPDIRECT3DTEXTURE9 g_pTextureWall[MAX_TEX] = {};			//テクスチャへのポインタ
+LPDIRECT3DTEXTURE9 g_pTextureWall[MAX_WALLTEX] = {};			//テクスチャへのポインタ
 LPDIRECT3DINDEXBUFFER9 g_pIdxBuffWall[MAX_WALL] = {};		//インデックスバッファへのポインタ
 Wall g_Wall[MAX_WALL];
 int g_nCntLockWall;
@@ -142,7 +127,7 @@ void InitWall(void)
 //=============================================================================
 void UninitWall(void)
 {
-	for (int nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (int nCnt = 0; nCnt < MAX_WALLTEX; nCnt++)
 	{
 		//テクスチャの破棄
 		if (g_pTextureWall[nCnt] != NULL)
@@ -252,12 +237,12 @@ void MakeVertexWall(LPDIRECT3DDEVICE9 pDevice)
 	int nCntIdx;	//インデックスのカウンター
 
 	//テクスチャの設定
-	D3DXCreateTextureFromFile(pDevice, MESHFIELD_TEXTUER, &g_pTextureWall[0]);
-	D3DXCreateTextureFromFile(pDevice, MESHFIELD_TEXTUER1, &g_pTextureWall[1]);
-	D3DXCreateTextureFromFile(pDevice, MESHFIELD_TEXTUER2, &g_pTextureWall[2]);
-	D3DXCreateTextureFromFile(pDevice, MESHFIELD_TEXTUER3, &g_pTextureWall[3]);
-	D3DXCreateTextureFromFile(pDevice, MESHFIELD_TEXTUER4, &g_pTextureWall[4]);
-	D3DXCreateTextureFromFile(pDevice, MESHFIELD_TEXTUER5, &g_pTextureWall[5]);
+	D3DXCreateTextureFromFile(pDevice, WALL_TEXTUER, &g_pTextureWall[0]);
+	D3DXCreateTextureFromFile(pDevice, WALL_TEXTUER1, &g_pTextureWall[1]);
+	D3DXCreateTextureFromFile(pDevice, WALL_TEXTUER2, &g_pTextureWall[2]);
+	D3DXCreateTextureFromFile(pDevice, WALL_TEXTUER3, &g_pTextureWall[3]);
+	D3DXCreateTextureFromFile(pDevice, WALL_TEXTUER4, &g_pTextureWall[4]);
+	D3DXCreateTextureFromFile(pDevice, WALL_TEXTUER5, &g_pTextureWall[5]);
 
 	for (int nCnt = 0; nCnt < MAX_WALL; nCnt++)
 	{

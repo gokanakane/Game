@@ -1,6 +1,6 @@
 //=============================================================================
 //
-// ポリゴン処理 [Item.h]
+// アイテム処理 [Item.h]
 // Author : 後閑茜
 //
 //=============================================================================
@@ -12,6 +12,13 @@
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
+#define ITEM_TEXTURE1 "data\\TEXTURE\\Object\\Item001.png"
+#define ITEM_TEXTURE2 "data\\TEXTURE\\Object\\Item002.png"
+#define ITEM_TEXTURE3 "data\\TEXTURE\\Object\\Item003.png"
+#define ITEM_TEXTURE4 "data\\TEXTURE\\Object\\Item004.png"
+#define ITEM_TEXTURE5 "data\\TEXTURE\\Object\\Key004.png"
+
+#define MAX_ITEMTEX (5)
 #define MAX_ITEM (128)		//壁の最大値
 
 //*****************************************************************************

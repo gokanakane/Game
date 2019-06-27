@@ -31,6 +31,9 @@
 //*****************************************************************************
 #define SCREEN_WIDTH	(1280)	// ウインドウの幅
 #define SCREEN_HEIGHT	(720)	// ウインドウの高さ
+#define CLASS_NAME		"AppClass"				// ウインドウのクラス名
+#define WINDOW_NAME		"怪盗S"	// ウインドウのキャプション名
+
 
 // ２Ｄポリゴン頂点フォーマット( 頂点座標[2D] / 頂点カラー / テクスチャ座標 )
 #define	FVF_VERTEX_2D	(D3DFVF_XYZRHW | D3DFVF_DIFFUSE | D3DFVF_TEX1)

@@ -1,6 +1,6 @@
 //=============================================================================
 //
-// スコア処理 [ItemGet.h]
+// アイテム取得UI処理 [ItemGet.h]
 // Author : Gokan akane
 //
 //=============================================================================
@@ -9,6 +9,16 @@
 
 #include "main.h"
 #include "Game.h"
+
+//*****************************************************************************
+// マクロ定義
+//*****************************************************************************
+#define	TEXTURE_ITEMGET "data\\TEXTURE\\Object\\Item001.png"	// 読み込むテクスチャファイル名
+#define	TEXTURE_ITEMGET1 "data\\TEXTURE\\Object\\Item002.png"	// 読み込むテクスチャファイル名
+#define	TEXTURE_ITEMGET2 "data\\TEXTURE\\Object\\Item003.png"	// 読み込むテクスチャファイル名
+#define	TEXTURE_ITEMGET3 "data\\TEXTURE\\Object\\Item004.png"	// 読み込むテクスチャファイル名
+#define	TEXTURE_ITEMGET4 "data\\TEXTURE\\Object\\Key004.png"	// 読み込むテクスチャファイル名
+#define MAX_ITEMGETTEX (5)
 
 //*****************************************************************************
 // 構造体

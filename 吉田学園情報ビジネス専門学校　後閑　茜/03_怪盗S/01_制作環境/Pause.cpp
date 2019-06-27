@@ -10,22 +10,6 @@
 #include "sound.h"
 
 //*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define MAX_TEX (5)											 //テクスチャの数
-#define PAUSECONRINUE_TEXTUER  "data\\TEXTURE\\Pause\\Continue.png"//読み込むテクスチャ
-#define PAUSERETRY_TEXTUER  "data\\TEXTURE\\Pause\\Retry.png"		//読み込むテクスチャ
-#define PAUSEQUIT_TEXTUER  "data\\TEXTURE\\Pause\\Quit.png"		//読み込むテクスチャ
-#define PAUSE_TEXTUER "data\\TEXTURE\\Tutorial\\Tutorial001.png"			//読み込むテクスチャ
-#define PAUSEMASK_TEXTURE " "
-#define PAUSEBG_POS_X (630)								  //ポーズ背景左上X
-#define PAUSEBG_POS_Y (180)								   //ポーズ背景左上Y
-#define PAUSEBG_WIDTH (990)									//ポーズ背景の幅
-#define PAUSEBG_HEIGHT (580)								    //ポーズ背景高さ
-#define PASUSE_WIDTH (110.0f)								//ロゴの間隔
-#define MAX_MENU (3)										//選択肢の数
-#define MAX_ANIMATION (4)									//アニメーションパターン
-//*****************************************************************************
 // プロトタイプ宣言
 //*****************************************************************************
 void MakeVertexPause(LPDIRECT3DDEVICE9 pDevice);

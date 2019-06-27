@@ -9,9 +9,21 @@
 
 #include "main.h"
 #include "Game.h"
+//*****************************************************************************
+// マクロ定義
+//*****************************************************************************
+#define WALL_TEXTUER "data\\TEXTURE\\Object\\Wall000.jpg"
+#define WALL_TEXTUER1 "data\\TEXTURE\\Object\\Wall001.jpg"
+#define WALL_TEXTUER2 "data\\TEXTURE\\Object\\Wall002.jpg"
+#define WALL_TEXTUER3 "data\\TEXTURE\\Object\\Wall003.jpg"
+#define WALL_TEXTUER4 "data\\TEXTURE\\Object\\Wall008.png"
+#define WALL_TEXTUER5 "data\\TEXTURE\\Object\\Wall009.png"
 
+#define WALLVTX_X (50.0f)		//頂点を置く横間隔
+#define WALLVTX_Y (50.0f)		//頂点を置く高さ間隔
 #define MAX_WALL (62)		//ステージ1を構成するフィールドの分割数
-#define MAX_VEC (4)
+#define MAX_WALLVEC (4)
+#define MAX_WALLTEX (6)
 //*****************************************************************************
 // 構造体
 //*****************************************************************************
@@ -29,7 +41,7 @@ typedef struct
 	int IndexStage;					//インデックス
 	int PolygonStage;				//ポリゴン数
 	int nTexType;					//テクスチャのタイプ
-	D3DXVECTOR3 aPos[MAX_VEC];			//ベクトル
+	D3DXVECTOR3 aPos[MAX_WALLVEC];			//ベクトル
 }Wall;
 //*****************************************************************************
 // プロトタイプ宣言

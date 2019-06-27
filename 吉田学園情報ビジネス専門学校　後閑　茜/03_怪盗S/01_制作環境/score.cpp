@@ -7,13 +7,6 @@
 #include "score.h"
 
 //*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define	TEXTURE_SCORE		"data\\TEXTURE\\UI\\number000.png"	// 読み込むテクスチャファイル名
-#define	TEXTURE_SCORE1		"data\\TEXTURE\\UI\\Score000.png"	// 読み込むテクスチャファイル名
-#define MAX_SCORE (8)
-#define MAX_TEX (2)
-//*****************************************************************************
 // プロトタイプ宣言
 //*****************************************************************************
 void MakeVertexScore(LPDIRECT3DDEVICE9 pDevice);
@@ -21,7 +14,7 @@ void MakeVertexScore(LPDIRECT3DDEVICE9 pDevice);
 //*****************************************************************************
 // グローバル変数
 //*****************************************************************************
-LPDIRECT3DTEXTURE9		g_pTextureScore[MAX_TEX] = {};		// テクスチャへのポインタ
+LPDIRECT3DTEXTURE9		g_pTextureScore[MAX_SCORETEX] = {};		// テクスチャへのポインタ
 LPDIRECT3DVERTEXBUFFER9 g_pVtxBuffScore = NULL;		// 頂点バッファへのポインタ
 int g_nScore;										// スコア
 int g_aScoreData[MAX_SCORE];
@@ -60,7 +53,7 @@ void InitScore(void)
 //=============================================================================
 void UninitScore(void)
 {
-	for (int nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (int nCnt = 0; nCnt < MAX_SCORETEX; nCnt++)
 	{
 		// テクスチャの開放
 		if (g_pTextureScore[nCnt] != NULL)
