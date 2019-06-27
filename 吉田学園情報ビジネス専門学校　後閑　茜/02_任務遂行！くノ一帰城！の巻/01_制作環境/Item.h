@@ -18,6 +18,10 @@
 #define ITEM_TEXTUER2 "data\\TEXTURE\\Object\\Item002.png"
 #define ITEM_TEXTUER3 "data\\TEXTURE\\Object\\makimono.png"
 
+#define COIN_PATTERN (4)
+#define ITEM_MOVE (3.0f)
+#define MAX_ITEMTEX (4)
+
 //*****************************************************************************
 // ç\ë¢ëÃíËã`
 //*****************************************************************************

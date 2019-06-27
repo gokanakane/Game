@@ -1,6 +1,6 @@
 //=============================================================================
 //
-// DirectX雛型処理 [Player.h]
+// プレイヤー処理 [Player.h]
 // Author :Gokan akane
 //
 //=============================================================================
@@ -12,6 +12,8 @@
 // マクロ定義
 //*****************************************************************************
 #define MAXPLAYER_LIFE (3)
+#define PLAYER_MOVE (4.0f)
+#define PLAYER_PATTERN (4)
 #define PLAYER_TEXTUER "data\\TEXTURE\\Charactor\\player001.png"
 #define PLAYER_TEXTUER1 "data\\TEXTURE\\Charactor\\player002.png"
 

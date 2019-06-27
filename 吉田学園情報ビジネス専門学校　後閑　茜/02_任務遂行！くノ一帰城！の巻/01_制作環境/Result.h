@@ -9,6 +9,21 @@
 
 #include "main.h"
 #include "Game.h"
+//*****************************************************************************
+// マクロ定義
+//*****************************************************************************
+#define RESULT_TEXTUER "data\\TEXTURE\\Result\\GameCliar000.png" //読み込むテクスチャ
+#define RESULT_OVER "data\\TEXTURE\\Result\\GameOver.png" //読み込むテクスチャ
+#define RESULT_TEXTUER1 "data\\TEXTURE\\Result\\Gameclear_logo.png" //読み込むテクスチャ
+#define RESULT_TEXTUER2 "data\\TEXTURE\\Result\\gameover_logo.png" //読み込むテクスチャ
+#define RESULT_CLIAR "data\\TEXTURE\\Result\\GameCliar003.png" //読み込むテクスチャ
+
+#define RESULT_POS_X (0)					   //リザルト左上X
+#define RESULT_POS_Y (0)					   //リザルト左上Y
+#define RESULT_WIDTH (SCREEN_WIDTH)			   //リザルトの幅
+#define RESULT_HEIGHT (SCREEN_HEIGHT)		   //リザルト高さ
+#define MAX_OVER_TEX (2)					   //テクスチャの最大数
+#define MAX_CLIAR_TEX (3)					   //ゲームクリアのテクスチャ
 
 //*****************************************************************************
 // プロトタイプ宣言

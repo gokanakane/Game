@@ -10,6 +10,13 @@
 #include "main.h"
 
 //*****************************************************************************
+// マクロ定義
+//*****************************************************************************
+#define BG_POS_X (0)					   //背景左上X
+#define BG_POS_Y (300)					   //背景左上Y
+#define MAX_TUTORIALBGTEX  (4)					   //テクスチャの枚数
+
+//*****************************************************************************
 // 構造体定義
 //*****************************************************************************
 typedef enum
@@ -31,10 +38,10 @@ typedef struct
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
-#define BG_TEXTUER  "data\\TEXTURE\\Tutorial\\Tutorial003.png" //読み込むテクスチャ
-#define BG_TEXTUER1 "data\\TEXTURE\\Tutorial\\Tutorial001.png" //読み込むテクスチャ
-#define BG_TEXTUER2 "data\\TEXTURE\\Tutorial\\Tutorial002.png" //読み込むテクスチャ
-#define BG_TEXTUER3 "data\\TEXTURE\\Tutorial\\Tutorial004.png" //読み込むテクスチャ
+#define BG_TUTOTIALTEXTUER  "data\\TEXTURE\\Tutorial\\Tutorial003.png" //読み込むテクスチャ
+#define BG_TUTOTIALTEXTUER1 "data\\TEXTURE\\Tutorial\\Tutorial001.png" //読み込むテクスチャ
+#define BG_TUTOTIALTEXTUER2 "data\\TEXTURE\\Tutorial\\Tutorial002.png" //読み込むテクスチャ
+#define BG_TUTOTIALTEXTUER3 "data\\TEXTURE\\Tutorial\\Tutorial004.png" //読み込むテクスチャ
 
 //*****************************************************************************
 // プロトタイプ宣言

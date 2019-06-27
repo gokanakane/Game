@@ -12,6 +12,13 @@
 // マクロ定義
 //*****************************************************************************
 #define MIGAWARI_MAX_LIFE (5)
+#define MIGAWARI_TEXTUER "data\\TEXTURE\\Object\\Migawari000.png"
+#define MIGAWARI_TEXTUER1 "data\\TEXTURE\\Object\\Migawari001.png"
+#define POS_Y (620)
+#define MIGAWARI_MOVE (1.0f)
+#define MIGAWARI_PATTERN		(5)
+#define MAX_MIGAWARI_TYPE (2)
+#define MAX_TEX (2)
 
 //*****************************************************************************
 // 構造体定義

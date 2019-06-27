@@ -11,24 +11,9 @@
 #include"sound.h"
 
 //*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define TITLEROGO_TEXTUER "data\\TEXTURE\\Title\\TitleBG1.png" //読み込むテクスチャ
-#define TITLEROGO_TEXTUER1 "data\\TEXTURE\\Title\\Title001.png" //読み込むテクスチャ
-#define TITLEROGO_TEXTUER2 "data\\TEXTURE\\UI\\PRESS_ENTER.png" //読み込むテクスチャ
-#define TITLEROGO_TEXTUER3 "data\\TEXTURE\\Title\\Title002.png" //読み込むテクスチャ
-
-#define TITLEROGO_POS_X (300)					   //タイトル左上X
-#define TITLEROGO_POS_Y (500)					   //タイトル左上Y
-#define TITLEROGO_WIDTH (SCREEN_WIDTH)			   //タイトルの幅
-#define TITLEROGO_HEIGHT (SCREEN_HEIGHT)		   //タイトル高さ
-#define MAX_TEX (4)
-#define MAX_ANIMATION (4)
-
-//*****************************************************************************
 // グローバル変数
 //*****************************************************************************
-LPDIRECT3DTEXTURE9 g_pTextureTitleRogo[MAX_TEX] = {};//テクスチャへのポインタ
+LPDIRECT3DTEXTURE9 g_pTextureTitleRogo[MAX_TITLEROGOTEX] = {};//テクスチャへのポインタ
 LPDIRECT3DVERTEXBUFFER9 g_pVtxBuffTitleRogo = NULL;
 RogoAnim g_Rogo;
 RogoState state;
@@ -62,7 +47,7 @@ void InitTitleRogo(void)
 	g_nTimeRogo = 0;
 
 	//頂点バッファの生成
-	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4 * MAX_TEX,
+	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4 * MAX_TITLEROGOTEX,
 								D3DUSAGE_WRITEONLY,
 								FVF_VERTEX_2D,
 								D3DPOOL_MANAGED,
@@ -177,7 +162,7 @@ void InitTitleRogo(void)
 //=============================================================================
 void UninitTitleRogo(void)
 {
-	for (int nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (int nCnt = 0; nCnt < MAX_TITLEROGOTEX; nCnt++)
 	{
 		//テクスチャの破棄
 		if (g_pTextureTitleRogo[nCnt] != NULL)
@@ -311,7 +296,7 @@ void DrawTitleRogo(void)
 	//頂点フォーマットの設定
 	pDevice->SetFVF(FVF_VERTEX_2D);
 
-	for (int nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (int nCnt = 0; nCnt < MAX_TITLEROGOTEX; nCnt++)
 	{
 		//テクスチャの設定
 		pDevice->SetTexture(0, g_pTextureTitleRogo[nCnt]);

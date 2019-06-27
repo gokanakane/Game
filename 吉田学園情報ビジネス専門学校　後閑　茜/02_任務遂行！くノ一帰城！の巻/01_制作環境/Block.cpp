@@ -10,17 +10,9 @@
 #include "block.h"
 
 //*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define MAX_TEX	(5)
-#define BLOCK_MOVE (3.0f) //ブロックの移動量
-#define PLAYER_POS_X (25.0f)	//プレイヤーのPos.x
-#define PLAYER_POS_Y (90.0f)	//プレイヤーのPos.y
-
-//*****************************************************************************
 // グローバル変数宣言
 //*****************************************************************************
-LPDIRECT3DTEXTURE9		g_pTextureBlock[MAX_TEX] = {};	// テクスチャへのポインタ
+LPDIRECT3DTEXTURE9		g_pTextureBlock[MAX_BLOCKTEX] = {};	// テクスチャへのポインタ
 LPDIRECT3DVERTEXBUFFER9 g_pVtxBuffBlock = NULL;	// 頂点バッファへのポインタ
 Block g_aBlock[MAX_BLOCK];				//ブロックの情報
 
@@ -107,7 +99,7 @@ void UninitBlock(void)
 {
 	int nCnt;
 	
-	for (nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (nCnt = 0; nCnt < MAX_BLOCKTEX; nCnt++)
 	{
 		//テクスチャの破棄
 		if (g_pTextureBlock[nCnt] != NULL)

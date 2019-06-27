@@ -14,17 +14,9 @@
 #include "Explosion.h"
 
 //*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define COIN_PATTERN (4)
-#define ITEM_MOVE (3.0f)
-
-#define MAX_TEX (4)
-
-//*****************************************************************************
 // グローバル変数宣言
 //*****************************************************************************
-LPDIRECT3DTEXTURE9		g_pTextureItem[MAX_TEX] = {};	// テクスチャへのポインタ
+LPDIRECT3DTEXTURE9		g_pTextureItem[MAX_ITEMTEX] = {};	// テクスチャへのポインタ
 LPDIRECT3DVERTEXBUFFER9 g_pVtxBuffItem = NULL;	// 頂点バッファへのポインタ
 ITEM g_aItem[MAX_ITEM];				//アイテムの情報
 int g_NumItem;
@@ -110,7 +102,7 @@ void UninitItem(void)
 	int nCnt;
 	// テクスチャの開放
 	//テクスチャの破棄
-	for (nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (nCnt = 0; nCnt < MAX_ITEMTEX; nCnt++)
 	{
 		if (g_pTextureItem[nCnt] != NULL)
 		{

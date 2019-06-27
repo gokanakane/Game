@@ -10,15 +10,9 @@
 #include "Item.h"
 
 //*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define BG_POS_X (0)					   //背景左上X
-#define BG_POS_Y (300)					   //背景左上Y
-#define MAX_TEX  (4)					   //テクスチャの枚数
-//*****************************************************************************
 // グローバル変数
 //*****************************************************************************
-LPDIRECT3DTEXTURE9 g_pTextureTutorialBG[MAX_TEX] = {};//テクスチャへのポインタ
+LPDIRECT3DTEXTURE9 g_pTextureTutorialBG[MAX_TUTORIALBGTEX] = {};//テクスチャへのポインタ
 LPDIRECT3DVERTEXBUFFER9 g_pVtxBuffTutorialBG = NULL;
 int g_nCntTutorialBG = 0;
 TutorialCol g_Col;
@@ -56,13 +50,13 @@ void InitTutorialBG(void)
 	pDevice = GetDevice();
 
 	//テクスチャ読み込み
-	D3DXCreateTextureFromFile(pDevice, BG_TEXTUER, &g_pTextureTutorialBG[0]);
-	D3DXCreateTextureFromFile(pDevice, BG_TEXTUER1, &g_pTextureTutorialBG[1]);
-	D3DXCreateTextureFromFile(pDevice, BG_TEXTUER2, &g_pTextureTutorialBG[2]);
-	D3DXCreateTextureFromFile(pDevice, BG_TEXTUER3, &g_pTextureTutorialBG[3]);
+	D3DXCreateTextureFromFile(pDevice, BG_TUTOTIALTEXTUER, &g_pTextureTutorialBG[0]);
+	D3DXCreateTextureFromFile(pDevice, BG_TUTOTIALTEXTUER1, &g_pTextureTutorialBG[1]);
+	D3DXCreateTextureFromFile(pDevice, BG_TUTOTIALTEXTUER2, &g_pTextureTutorialBG[2]);
+	D3DXCreateTextureFromFile(pDevice, BG_TUTOTIALTEXTUER3, &g_pTextureTutorialBG[3]);
 
 	//頂点バッファの生成
-	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4 * MAX_TEX, 
+	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4 * MAX_TUTORIALBGTEX, 
 								D3DUSAGE_WRITEONLY,
 								FVF_VERTEX_2D, 
 								D3DPOOL_MANAGED,
@@ -180,7 +174,7 @@ void InitTutorialBG(void)
 //=============================================================================
 void UninitTutorialBG(void)
 {
-	for (int nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (int nCnt = 0; nCnt < MAX_TUTORIALBGTEX; nCnt++)
 	{//テクスチャの破棄
 		if (g_pTextureTutorialBG[nCnt] != NULL)
 		{
@@ -274,7 +268,7 @@ void DrawTutorialBG(void)
 	//頂点フォーマットの設定
 	pDevice->SetFVF(FVF_VERTEX_2D);
 
-	for (int nCnt = 0; nCnt < MAX_TEX; nCnt++)
+	for (int nCnt = 0; nCnt < MAX_TUTORIALBGTEX; nCnt++)
 	{
 		//テクスチャの設定
 		pDevice->SetTexture(0, g_pTextureTutorialBG[nCnt]);

@@ -14,18 +14,6 @@
 #include "migawari.h"
 
 //*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define	MAX_BOW		(120)		// 弾の最大数
-#define BOW_TEXTUER "data\\TEXTURE\\Object\\bow.png"
-#define BOW_TEXTUER1 "data\\TEXTURE\\Object\\bow001.png"
-
-#define POS_Y (620)
-#define BOW_MOVE (1.0f)
-#define BOW_PATTERN		(5)
-#define MAX_BOW_TYPE (2)
-#define MAX_TEX (2)
-//*****************************************************************************
 // グローバル変数宣言
 //*****************************************************************************
 LPDIRECT3DTEXTURE9		g_pTextureBow[MAX_TEX] = {};	// テクスチャへのポインタ

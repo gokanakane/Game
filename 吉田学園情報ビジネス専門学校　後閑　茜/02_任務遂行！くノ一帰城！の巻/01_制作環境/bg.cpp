@@ -9,18 +9,6 @@
 #include "bg.h"
 
 //*****************************************************************************
-// マクロ定義
-//*****************************************************************************
-#define BG_TEXTUER  "data\\TEXTURE\\BG\\sky001.jpg" //読み込むテクスチャ
-#define BG_TEXTUER1 "data\\TEXTURE\\BG\\cloud.png" //読み込むテクスチャ
-#define BG_TEXTUER2 "data\\TEXTURE\\BG\\BG000.png" //読み込むテクスチャ
-#define BG_POS_X (0)					   //背景左上X
-#define BG_POS_Y (300)					   //背景左上Y
-#define BG_WIDTH (SCREEN_WIDTH)			   //背景の幅
-#define BG_HEIGHT (SCREEN_HEIGHT)		   //背景高さ
-#define MAX_TEX  (3)					   //テクスチャの枚数
-#define BG_MOVE (3.0f)
-//*****************************************************************************
 // グローバル変数
 //*****************************************************************************
 LPDIRECT3DTEXTURE9 g_pTextureBG[MAX_TEX] = {};//テクスチャへのポインタ
