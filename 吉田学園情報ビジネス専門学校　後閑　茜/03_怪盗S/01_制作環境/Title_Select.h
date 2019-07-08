@@ -1,10 +1,10 @@
 //=============================================================================
 //
-// 背景処理 [Title_Select.h]
-// Author :Gokan akane
+// タイトル中の選択処理 [Title_Select.h]
+// Author :Gokan Akane
 //
 //=============================================================================
-#ifndef _TITLE_SELECTH_ //二十インクルード防止のマクロ定義
+#ifndef _TITLE_SELECT_H_ //二十インクルード防止のマクロ定義
 #define _TITLE_SELECT
 
 #include "main.h"

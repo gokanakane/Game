@@ -1,7 +1,36 @@
-﻿  ItemUI.cpp
+﻿  tutorial.cpp
+  time.cpp
+  sound.cpp
+  shadow.cpp
+  score.cpp
+  main.cpp
+  light.cpp
+  input.cpp
+  fade.cpp
+  explosion.cpp
+  camera.cpp
+  billboard.cpp
+  Wall.cpp
+  Title_Select.cpp
+  Title.cpp
+  Stage.cpp
+  Result.cpp
+  RankingScore.cpp
+  Ranking.cpp
+  Player.cpp
   コードを生成中...
   コンパイル中...
+  Pause.cpp
+  Obj.cpp
+  ItemUI.cpp
+  ItemGetUI.cpp
+  Item.cpp
   Game.cpp
+  Font.cpp
+  Enemy.cpp
+  DisPlay.cpp
+  DirectInput.cpp
+  Bullet.cpp
   コードを生成中...
   怪盗S.vcxproj -> C:\Users\game112\Documents\GitHub\Game\吉田学園情報ビジネス専門学校　後閑　茜\03_怪盗S\01_制作環境\\怪盗S.exe
   怪盗S.vcxproj -> C:\Users\game112\Documents\GitHub\Game\吉田学園情報ビジネス専門学校　後閑　茜\03_怪盗S\01_制作環境\\怪盗S.pdb (Full PDB)
