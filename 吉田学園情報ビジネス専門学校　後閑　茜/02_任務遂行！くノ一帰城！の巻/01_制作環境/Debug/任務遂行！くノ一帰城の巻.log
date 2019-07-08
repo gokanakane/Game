@@ -1,3 +1,45 @@
-﻿  TutorialBG.cpp
+﻿  tutorial.cpp
+c:\users\game112\documents\github\game\吉田学園情報ビジネス専門学校　後閑　茜\02_任務遂行！くノ一帰城！の巻\01_制作環境\migawari.h(21): warning C4005: 'MAX_TEX': マクロが再定義されました。
+  c:\users\game112\documents\github\game\吉田学園情報ビジネス専門学校　後閑　茜\02_任務遂行！くノ一帰城！の巻\01_制作環境\bg.h(21): note: 'MAX_TEX' の以前の定義を確認してください
+  time.cpp
+  sound.cpp
+  score.cpp
+  mist.cpp
+  migawari.cpp
+  main.cpp
+  input.cpp
+  fade.cpp
+  enemy.cpp
+  bow.cpp
+  bg.cpp
+  TutorialBG.cpp
+  TitleRogo.cpp
+  TitleBG.cpp
+  Title.cpp
+  Result.cpp
+  RankingScore.cpp
+  Ranking.cpp
+  Player.cpp
+  コードを生成中...
+  コンパイル中...
+  PauseRetry.cpp
+  PauseQuit.cpp
+  PauseContinue.cpp
+  PauseBG.cpp
+  Pause.cpp
+c:\users\game112\documents\github\game\吉田学園情報ビジネス専門学校　後閑　茜\02_任務遂行！くノ一帰城！の巻\01_制作環境\pausequit.h(14): warning C4005: 'PAUSE_TEXTUER': マクロが再定義されました。
+  c:\users\game112\documents\github\game\吉田学園情報ビジネス専門学校　後閑　茜\02_任務遂行！くノ一帰城！の巻\01_制作環境\pausebg.h(15): note: 'PAUSE_TEXTUER' の以前の定義を確認してください
+c:\users\game112\documents\github\game\吉田学園情報ビジネス専門学校　後閑　茜\02_任務遂行！くノ一帰城！の巻\01_制作環境\pauseretry.h(15): warning C4005: 'PAUSE_TEXTUER': マクロが再定義されました。
+  c:\users\game112\documents\github\game\吉田学園情報ビジネス専門学校　後閑　茜\02_任務遂行！くノ一帰城！の巻\01_制作環境\pausequit.h(14): note: 'PAUSE_TEXTUER' の以前の定義を確認してください
+  Life.cpp
+  Item.cpp
+  InterFase.cpp
+  Game.cpp
+c:\users\game112\documents\github\game\吉田学園情報ビジネス専門学校　後閑　茜\02_任務遂行！くノ一帰城！の巻\01_制作環境\bow.h(23): warning C4005: 'MAX_TEX': マクロが再定義されました。
+  c:\users\game112\documents\github\game\吉田学園情報ビジネス専門学校　後閑　茜\02_任務遂行！くノ一帰城！の巻\01_制作環境\bg.h(21): note: 'MAX_TEX' の以前の定義を確認してください
+  Explosion.cpp
+  Door.cpp
+  Block.cpp
+  コードを生成中...
   任務遂行！くノ一帰城の巻.vcxproj -> C:\Users\game112\Documents\GitHub\Game\吉田学園情報ビジネス専門学校　後閑　茜\02_任務遂行！くノ一帰城！の巻\01_制作環境\\任務遂行！くノ一帰城の巻.exe
   任務遂行！くノ一帰城の巻.vcxproj -> C:\Users\game112\Documents\GitHub\Game\吉田学園情報ビジネス専門学校　後閑　茜\02_任務遂行！くノ一帰城！の巻\01_制作環境\\任務遂行！くノ一帰城の巻.pdb (Full PDB)

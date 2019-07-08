@@ -1,7 +1,7 @@
 //=============================================================================
 //
-// 背景処理 [bg.cpp]
-// Author : Gokan akane
+// リトライ処理 [PauseRetry.cpp]
+// Author : Gokan Akane
 //
 //=============================================================================
 #include "main.h"
@@ -26,7 +26,7 @@ void InitPauseRetry(void)
 	pDevice = GetDevice();
 
 	//テクスチャ読み込み
-	D3DXCreateTextureFromFile(pDevice, PAUSE_TEXTUER, &g_pTexturePauseRetry);
+	D3DXCreateTextureFromFile(pDevice, PAUSERETRY_TEXTUER, &g_pTexturePauseRetry);
 
 	//頂点バッファの生成
 	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4,
@@ -41,8 +41,8 @@ void InitPauseRetry(void)
 	g_pVtxBuffPauseRetry->Lock(0, 0, (void**)&pVtx, 0);
 
 	//背景の座標設定
-	pVtx[0].pos = D3DXVECTOR3(PAUSE_POS_X, PAUSE_POS_Y + 120.0f, 0.0f);//一つ目の頂点の場所指定
-	pVtx[1].pos = D3DXVECTOR3(PAUSE_WIDTH, PAUSE_POS_Y + 120.0f, 0.0f);//二つ目の頂点の場所指定（右回り）
+	pVtx[0].pos = D3DXVECTOR3(PAUSERETRY_POS_X, PAUSERETRY_POS_Y + 120.0f, 0.0f);//一つ目の頂点の場所指定
+	pVtx[1].pos = D3DXVECTOR3(PAUSERETRY_WIDTH, PAUSERETRY_POS_Y + 120.0f, 0.0f);//二つ目の頂点の場所指定（右回り）
 	pVtx[2].pos = D3DXVECTOR3(280 + 150, 400 + 120.0f - 80, 0.0f);//三つ目の頂点の場所指定（右回り）
 	pVtx[3].pos = D3DXVECTOR3(640 + 150, 400 + 120.0f - 80, 0.0f);//三つ目の頂点の場所指定（右回り）
 
