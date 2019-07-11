@@ -19,6 +19,7 @@
 #include "cutinBase.h"
 #include "optionBase.h"
 #include "shield.h"
+#include "MagicEffect.h"
 
 //=============================================================================
 // Ã“Iƒƒ“ƒo•Ï”
@@ -89,7 +90,11 @@ void CKarnerian::Update(void)
 			m_bShield = true;
 		}
 		m_nCntSkillTime++;
-		if (m_nCntSkillTime >= 1800 || CShield::GetShieldEmergence() == false)
+		if (m_nCntSkillTime % 20 == 0)
+		{
+			CMagicEffect::SetMagicEffect(m_pos);
+		}
+		if (m_nCntSkillTime >= 180 || CShield::GetShieldEmergence() == false)
 		{
 			m_NormalSkillUse = PLAYERSKIL_NORMALL_FALSE;
 			if (CManager::GetMode() == CManager::MODE_TUTORIAL)

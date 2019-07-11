@@ -119,36 +119,38 @@ void CBullet::Update(void)
 		*/
 		//}
 	CScene2D::SetPos(m_pos);
+
+	/* エフェクト */
 	if (m_BulletType == BULLETTYPE_PLAYER)
 	{
 		switch (CManager::GetCharactorSelect())
 		{
-		case CManager::CHARACTORSTATE_DORAGON:
+		case CManager::CHARACTORSTATE_DORAGON:		//ドラグーン
 			m_pEffect = CEffect::Create(m_pos, CEffect::EFFECTTYPE_BULLET, EFFECTCOL_DORAGON);
 			break;
-		case CManager::CHARACTORSTATE_KARNERIAN:
+		case CManager::CHARACTORSTATE_KARNERIAN:	//カーネリアン
 			m_pEffect = CEffect::Create(m_pos, CEffect::EFFECTTYPE_BULLET, EFFECTCOL_KARNERIAN);
 			break;
-		case CManager::CHARACTORSTATE_VIVIAN:
+		case CManager::CHARACTORSTATE_VIVIAN:		//ビビアン
 			m_pEffect = CEffect::Create(m_pos, CEffect::EFFECTTYPE_BULLET, EFFECTCOL_VIVIAN);
 			break;
-		case CManager::CHARACTORSTATE_AREISTA:
+		case CManager::CHARACTORSTATE_AREISTA:		//アレイスタ
 			m_pEffect = CEffect::Create(m_pos, CEffect::EFFECTTYPE_BULLET, EFFECTCOL_AREISTA);
 			break;
-		case CManager::CHARACTORSTATE_RENGE:
+		case CManager::CHARACTORSTATE_RENGE:		//蓮華
 			m_pEffect = CEffect::Create(m_pos, CEffect::EFFECTTYPE_BULLET, EFFECTCOL_RENGE);
 			break;
-		case CManager::CHARACTORSTATE_LILIY:
+		case CManager::CHARACTORSTATE_LILIY:		//リリィカルト
 			m_pEffect = CEffect::Create(m_pos, CEffect::EFFECTTYPE_BULLET, EFFECTCOL_LILIY);
 			break;
 		}
 	}
 	else if (m_BulletType == BULLETTYPE_ENEMY)
-	{
+	{//敵の弾
 		m_pEffect = CEffect::Create(m_pos, CEffect::EFFECTTYPE_BULLET, EFFECTCOL_ENEMY);
 	}
 	else if (m_BulletType == BULLETTYPE_DRAIN)
-	{
+	{//アレイスタの吸血弾
 		m_pEffect = CEffect::Create(m_pos, CEffect::EFFECTTYPE_BULLET, EFFECTCOL_AREISTA);
 	}
 
@@ -228,21 +230,21 @@ void CBullet::Update(void)
 					{//弾と敵のあたり判定
 						CSound::PlaySound(CSound::SOUND_LABEL_SE_DRAIN);
 						if (pEnemy->GetEnemyType() == CEnemy::ENEMYTYPE_NORMAL)
-						{
+						{//通常敵に当たった場合
 							CScore::AddScore(100);
 						}
 						else if (pEnemy->GetEnemyType() == CEnemy::ENEMYTYPE_BOSS)
-						{
+						{//ボス敵に当たった場合
 							CScore::AddScore(500);
 						}
 						else if (pEnemy->GetEnemyType() == CEnemy::ENEMYTYPE_RELATIVE)
-						{
+						{//ボス敵の眷属に当たった場合
 							CScore::AddScore(200);
 						}
-						CExplosion::Create(pos);	//爆発の生成
+						CExplosion::Create(pos);									//爆発の生成
 						pEnemy->SetEnemyState(CEnemy::ENEMYSTATE_DAMAGE);			//敵の破棄
 						pPlayer->SetRecovery(1);
-						Uninit();					//弾の破棄
+						Uninit();													//弾の破棄
 						break;
 					}
 				}
@@ -255,16 +257,16 @@ void CBullet::Update(void)
 					D3DXVECTOR3 pos = pPlayer->GetPos();
 					if (pPlayer->GetState() != CPlayer::PLAYERSTATE_INVINCIBLE)
 					{
-						if (m_pos.x > pos.x - 10.0f
-							&& m_pos.x < pos.x + 10.0f
-							&& m_pos.y >pos.y - 10.0f
-							&& m_pos.y < pos.y + 10.0f)
+						if (m_pos.x > pos.x - 20.0f
+							&& m_pos.x < pos.x + 20.0f
+							&& m_pos.y >pos.y - 20.0f
+							&& m_pos.y < pos.y + 20.0f)
 						{//弾とプレイヤーのあたり判定
 							CSound::PlaySound(CSound::SOUND_LABEL_SE_HITPL);
 							CExplosion::Create(pos);	//爆発の生成
 							if (CManager::GetMode() == CManager::MODE_GAME)
 							{//ゲームの時だけダメージ処理
-								pPlayer->SetDamage(1);		//ダメージ
+								pPlayer->SetDamage(1);	//ダメージ
 							}
 							Uninit();					//弾の破棄
 							break;
@@ -283,7 +285,7 @@ void CBullet::Update(void)
 						&& m_pos.y < pos.y + 30.0f)
 					{
 						CExplosion::Create(pos);	//爆発の生成
-						pShield->SetDamage(1);	//ダメージ処理
+						pShield->SetDamage(1);		//ダメージ処理
 						Uninit();					//弾の破棄
 						break;
 					}

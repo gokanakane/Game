@@ -19,6 +19,7 @@
 #include "cutinBase.h"
 #include "optionBase.h"
 #include "abyssgate.h"
+#include "MagicEffect.h"
 
 //=============================================================================
 // Ã“Iƒƒ“ƒo•Ï”

@@ -19,6 +19,7 @@
 #include "cutinBase.h"
 #include "optionBase.h"
 #include "putbullet.h"
+#include "MagicEffect.h"
 
 //=============================================================================
 // Ã“Iƒƒ“ƒo•Ï”
@@ -94,7 +95,11 @@ void CLiliy::Update(void)
 			}
 		}
 		m_nCntSkillTime++;
-		if (m_nCntSkillTime >= 1200 || CPutBullet::GetPutBulletEmergence() == false)
+		if (m_nCntSkillTime % 20 == 0)
+		{
+			CMagicEffect::SetMagicEffect(m_pos);
+		}
+		if (m_nCntSkillTime >= 120 || CPutBullet::GetPutBulletEmergence() == false)
 		{
 			m_NormalSkillUse = PLAYERSKIL_NORMALL_FALSE;
 			if (CManager::GetMode() == CManager::MODE_TUTORIAL)
