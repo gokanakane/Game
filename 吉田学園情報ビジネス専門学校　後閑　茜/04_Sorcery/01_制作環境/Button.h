@@ -9,7 +9,7 @@
 
 #include "main.h"
 #include "scene.h"
-#include "uiBase.h"
+#include "GameUi.h"
 
 //*****************************************************************************
 // É}ÉNÉçíËã`

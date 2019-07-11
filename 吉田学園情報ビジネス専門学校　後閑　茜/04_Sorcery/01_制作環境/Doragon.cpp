@@ -16,7 +16,7 @@
 #include "effectBase.h"
 #include "magicEffect.h"
 #include "fade.h"
-#include "uiBase.h"
+#include "GameUi.h"
 #include "cutinBase.h"
 #include "optionBase.h"
 

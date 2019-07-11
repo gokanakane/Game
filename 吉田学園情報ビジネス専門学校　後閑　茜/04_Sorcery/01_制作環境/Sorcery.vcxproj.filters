@@ -237,9 +237,6 @@
     <ClCompile Include="Time.cpp">
       <Filter>ソース ファイル\UI</Filter>
     </ClCompile>
-    <ClCompile Include="UiBase.cpp">
-      <Filter>ソース ファイル\UI</Filter>
-    </ClCompile>
     <ClCompile Include="PlayerBase.cpp">
       <Filter>ソース ファイル\Charactor\Player</Filter>
     </ClCompile>
@@ -263,6 +260,9 @@
     </ClCompile>
     <ClCompile Include="Sound.cpp">
       <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="GameUi.cpp">
+      <Filter>ソース ファイル\UI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -419,9 +419,6 @@
     <ClInclude Include="ScoreBase.h">
       <Filter>ヘッダー ファイル\UI\Score</Filter>
     </ClInclude>
-    <ClInclude Include="UiBase.h">
-      <Filter>ヘッダー ファイル\UI</Filter>
-    </ClInclude>
     <ClInclude Include="Vivian.h">
       <Filter>ヘッダー ファイル\Charactor\Player</Filter>
     </ClInclude>
@@ -435,6 +432,9 @@
       <Filter>ヘッダー ファイル\Mode</Filter>
     </ClInclude>
     <ClInclude Include="TutorialUI.h">
+      <Filter>ヘッダー ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="GameUi.h">
       <Filter>ヘッダー ファイル\UI</Filter>
     </ClInclude>
   </ItemGroup>

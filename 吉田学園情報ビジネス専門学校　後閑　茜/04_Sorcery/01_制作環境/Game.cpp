@@ -22,7 +22,7 @@
 #include "scoreBase.h"
 #include "effectBase.h"
 #include "Pause.h"
-#include "uiBase.h"
+#include "GameUi.h"
 #include "LifeGauge.h"
 #include "Button.h"
 #include "time.h"

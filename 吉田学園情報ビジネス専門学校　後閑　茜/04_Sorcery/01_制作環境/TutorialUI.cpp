@@ -7,7 +7,7 @@
 #include "manager.h"
 #include "renderer.h"
 #include "scene2D.h"
-#include "uiBase.h"
+#include "GameUi.h"
 #include "TutorialUI.h"
 #include "playerBase.h"
 #include "Input.h"

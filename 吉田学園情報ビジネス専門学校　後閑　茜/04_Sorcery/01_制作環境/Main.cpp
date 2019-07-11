@@ -73,8 +73,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	//レンダリングクラスの生成
 	pManager = new CManager;
+
 	// 初期化処理
-	pManager->Init(hInstance, hWnd, FALSE);
+	if (FAILED(pManager->Init(hInstance, hWnd, FALSE)))
+	{
+		return -1;
+	}
 
 	// 分解能を設定
 	timeBeginPeriod(1);

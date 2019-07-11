@@ -18,7 +18,7 @@
 #include "Renge.h"
 #include "Liliy.h"
 #include "fade.h"
-#include "uiBase.h"
+#include "GameUi.h"
 #include "Button.h"
 
 //=============================================================================

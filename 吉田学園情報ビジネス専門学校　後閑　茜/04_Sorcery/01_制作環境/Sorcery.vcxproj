@@ -74,7 +74,7 @@
     <ClCompile Include="Title.cpp" />
     <ClCompile Include="Tutorial.cpp" />
     <ClCompile Include="TutorialUI.cpp" />
-    <ClCompile Include="UiBase.cpp" />
+    <ClCompile Include="GameUi.cpp" />
     <ClCompile Include="Vivian.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -133,7 +133,7 @@
     <ClInclude Include="Title.h" />
     <ClInclude Include="Tutorial.h" />
     <ClInclude Include="TutorialUI.h" />
-    <ClInclude Include="UiBase.h" />
+    <ClInclude Include="GameUi.h" />
     <ClInclude Include="Vivian.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
