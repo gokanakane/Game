@@ -15,11 +15,10 @@
 #include "Vivian.h"
 #include "effectBase.h"
 #include "fade.h"
-#include "GameUi.h"
+#include "uiBase.h"
 #include "cutinBase.h"
 #include "optionBase.h"
 #include "abyssgate.h"
-#include "MagicEffect.h"
 
 //=============================================================================
 // Ã“Iƒƒ“ƒo•Ï”

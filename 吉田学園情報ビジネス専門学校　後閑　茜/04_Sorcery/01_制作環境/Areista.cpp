@@ -15,10 +15,9 @@
 #include "Areista.h"
 #include "effectBase.h"
 #include "fade.h"
-#include "GameUi.h"
+#include "uiBase.h"
 #include "cutinBase.h"
 #include "optionBase.h"
-#include "MagicEffect.h"
 
 //=============================================================================
 // Ã“Iƒƒ“ƒo•Ï”
@@ -83,10 +82,6 @@ void CAreista::Update(void)
 
 	case PLAYERSKILL_NORMAL_TRUE:
 		m_nCntSkillTime++;
-		if (m_nCntSkillTime % 20 == 0)
-		{
-			CMagicEffect::SetMagicEffect(m_pos);
-		}
 		if ((pInput->GetKeyboardTrigger(DIK_SPACE) == true) || (state.Gamepad.wButtons & XINPUT_GAMEPAD_B && CDirectXInput::GetConnectionJoypad() == true))
 		{
 			if (CDirectXInput::GetInputJoyState() == CDirectXInput::INPUT_JOYSTATE_NOTPUSH)

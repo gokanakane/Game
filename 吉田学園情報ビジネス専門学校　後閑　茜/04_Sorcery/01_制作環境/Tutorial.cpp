@@ -17,7 +17,7 @@
 #include "bullet.h"
 #include "effectBase.h"
 #include "Explosion.h"
-#include "GameUi.h"
+#include "uiBase.h"
 #include "Button.h"
 #include "TutorialUI.h"
 #include "cutinBase.h"

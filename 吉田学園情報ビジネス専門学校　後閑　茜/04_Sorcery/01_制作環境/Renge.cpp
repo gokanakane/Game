@@ -15,10 +15,9 @@
 #include "Renge.h"
 #include "effectBase.h"
 #include "fade.h"
-#include "GameUi.h"
+#include "uiBase.h"
 #include "cutinBase.h"
 #include "optionBase.h"
-#include "MagicEffect.h"
 
 //=============================================================================
 // ê√ìIÉÅÉìÉoïœêî
@@ -88,10 +87,6 @@ void CRenge::Update(void)
 
 	case PLAYERSKILL_NORMAL_TRUE:
 		m_nCntSkillTime++;
-		if (m_nCntSkillTime % 20 == 0)
-		{
-			CMagicEffect::SetMagicEffect(m_pos);
-		}
 		if (m_state != PLAYERSTATE_INVINCIBLE)
 		{
 			m_state = PLAYERSTATE_INVINCIBLE;
